@@ -1,0 +1,11 @@
+# LabVIEW generated files
+*.aliases
+*.lvlps
+
+# Build output
+builds/
+Builds/
+
+# Windows
+Thumbs.db
+desktop.ini
