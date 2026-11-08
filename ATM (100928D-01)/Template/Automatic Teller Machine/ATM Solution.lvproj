@@ -23,6 +23,10 @@
 			<Item Name="ATM States.ctl" Type="VI" URL="../Controls/ATM States.ctl"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Get Main Menu.vi" Type="VI" URL="../SubVIs/Get Main Menu.vi"/>
+			<Item Name="Get Menu Labels.vi" Type="VI" URL="../SubVIs/Get Menu Labels.vi"/>
+			<Item Name="Get Pressed Button Index.vi" Type="VI" URL="../SubVIs/Get Pressed Button Index.vi"/>
+			<Item Name="Get Menu Action.vi" Type="VI" URL="../SubVIs/Get Menu Action.vi"/>
 			<Item Name="Build ATM Message.vi" Type="VI" URL="../SubVIs/Build ATM Message.vi"/>
 			<Item Name="Find Account.vi" Type="VI" URL="../SubVIs/Find Account.vi"/>
 			<Item Name="Get Accounts File Path.vi" Type="VI" URL="../SubVIs/Get Accounts File Path.vi"/>
