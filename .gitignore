@@ -1,6 +1,7 @@
 # LabVIEW generated files
 *.aliases
 *.lvlps
+*.UserState/
 
 # Build output
 builds/

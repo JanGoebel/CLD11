@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="26008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str">CLD sample exam 100928D-01: Automatic Teller Machine (ATM) controller.</Property>
@@ -12,10 +12,18 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Controls" Type="Folder"/>
+		<Item Name="Controls" Type="Folder">
+			<Item Name="ATM Data.ctl" Type="VI" URL="../Controls/ATM Data.ctl"/>
+			<Item Name="ATM Account.ctl" Type="VI" URL="../Controls/ATM Account.ctl"/>
+			<Item Name="ATM Input Mode.ctl" Type="VI" URL="../Controls/ATM Input Mode.ctl"/>
+			<Item Name="ATM Menu Item.ctl" Type="VI" URL="../Controls/ATM Menu Item.ctl"/>
+			<Item Name="ATM Menu Side.ctl" Type="VI" URL="../Controls/ATM Menu Side.ctl"/>
+			<Item Name="ATM Menu.ctl" Type="VI" URL="../Controls/ATM Menu.ctl"/>
+			<Item Name="ATM States.ctl" Type="VI" URL="../Controls/ATM States.ctl"/>
+		</Item>
 		<Item Name="SubVIs" Type="Folder"/>
-		<Item Name="Automatic Teller Machine (ATM).vi" Type="VI" URL="../Automatic Teller Machine (ATM).vi"/>
 		<Item Name="ATM accounts.txt" Type="Document" URL="../ATM accounts.txt"/>
+		<Item Name="Automatic Teller Machine (ATM).vi" Type="VI" URL="../Automatic Teller Machine (ATM).vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
