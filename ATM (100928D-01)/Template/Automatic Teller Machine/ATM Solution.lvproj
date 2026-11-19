@@ -60,6 +60,48 @@
 			<Item Name="Test Withdraw Funds.vi" Type="VI" URL="../Tests/Test Withdraw Funds.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="ATM Application" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{E5946201-450D-4465-9602-A0CE127BD724}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{DF9A0042-BA75-49DE-962E-7C2846584A20}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{640CA215-DF18-4CC7-8D4B-9D51C1D4B2C7}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">ATM Application</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../../../../builds/ATM</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{D879B083-2A86-4356-992A-9038DC3F5AC2}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">ATM.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../../../../builds/ATM/ATM.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../../../../builds/ATM</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5D80362C-D403-4476-BA29-EEFEEF1FABFE}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Automatic Teller Machine (ATM).vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/ATM accounts.txt</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">ATM controller (CLD sample exam 100928D-01)</Property>
+				<Property Name="TgtF_internalName" Type="Str">ATM Application</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026</Property>
+				<Property Name="TgtF_productName" Type="Str">ATM</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{0B7E5A2C-6F1D-4C3B-9A8E-2D4F6B8C1E3A}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">ATM.exe</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
