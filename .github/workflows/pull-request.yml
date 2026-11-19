@@ -1,0 +1,66 @@
+# Runs on every pull request: unit tests, LabVIEW diff, exe build.
+# Reports are uploaded as run artifacts and linked in a PR comment.
+
+name: Pull request checks
+
+on: pull_request
+
+jobs:
+  check:
+    runs-on: [self-hosted, labview]      # this PC: LabVIEW 2026, Caraya, LabVIEW CLI
+    permissions:
+      contents: read
+      pull-requests: write               # for the comment
+    defaults:
+      run:
+        shell: powershell
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0                 # the diff needs the base branch
+
+      - name: Unit tests (Caraya)
+        id: tests
+        run: .\tools\Run-Tests.ps1
+
+      - name: LabVIEW diff
+        id: diff
+        if: always()
+        run: .\tools\Diff-VIs.ps1 -Base origin/${{ github.base_ref }}
+
+      - name: Build exe
+        id: build
+        run: .\tools\Build-Exe.ps1
+
+      - name: Upload test report
+        id: test-report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: test-report, path: test-report }
+
+      - name: Upload diff report
+        id: diff-report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: diff-report, path: diff-report }
+
+      - name: Upload exe
+        id: exe
+        if: hashFiles('builds/ATM.zip') != ''
+        uses: actions/upload-artifact@v4
+        with: { name: ATM-exe, path: builds/ATM.zip }
+
+      - name: Comment on the PR
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment ${{ github.event.number }} --body @"
+          ### CI for ${{ github.event.pull_request.head.sha }}
+          | | Result | Report |
+          |---|---|---|
+          | Unit tests | ${{ steps.tests.outcome }} | [test report](${{ steps.test-report.outputs.artifact-url }}) |
+          | LabVIEW diff | ${{ steps.diff.outcome }} | [full diff report](${{ steps.diff-report.outputs.artifact-url }}) |
+          | Exe build | ${{ steps.build.outcome }} | [ATM.zip](${{ steps.exe.outputs.artifact-url }}) |
+          "@
