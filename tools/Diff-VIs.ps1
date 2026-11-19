@@ -23,8 +23,7 @@ Remove-Item $Out -Recurse -Force -ErrorAction SilentlyContinue
 $Out = (New-Item -ItemType Directory $Out).FullName
 
 # 1. Check out the old version in a temp folder, so old VIs still find their subVIs.
-$old = Join-Path $env:TEMP "vi-diff-base"
-git worktree remove --force $old 2>$null
+$old = Join-Path $env:TEMP ("vi-diff-" + (Get-Random))
 git worktree add --detach $old (git merge-base $Base HEAD) | Out-Null
 
 # 2. Compare each changed VI/CTL with LabVIEW's comparison tool.

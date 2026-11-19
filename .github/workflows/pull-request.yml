@@ -25,6 +25,7 @@ jobs:
         run: .\tools\Run-Tests.ps1
 
       - name: LabVIEW diff
+        id: diff
         if: always()
         run: .\tools\Diff-VIs.ps1 -Base origin/${{ github.base_ref }}
 
@@ -60,6 +61,6 @@ jobs:
           | | Result | Report |
           |---|---|---|
           | Unit tests | ${{ steps.tests.outcome }} | [test report](${{ steps.test-report.outputs.artifact-url }}) |
-          | LabVIEW diff | | [full diff report](${{ steps.diff-report.outputs.artifact-url }}) |
+          | LabVIEW diff | ${{ steps.diff.outcome }} | [full diff report](${{ steps.diff-report.outputs.artifact-url }}) |
           | Exe build | ${{ steps.build.outcome }} | [ATM.zip](${{ steps.exe.outputs.artifact-url }}) |
           "@
