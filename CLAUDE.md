@@ -4,6 +4,7 @@
 |---|---|
 | Exam spec | `ATM (100928D-01)/100928D-01.pdf` |
 | LabVIEW 2026 project | `ATM (100928D-01)/Template/Automatic Teller Machine/ATM Solution.lvproj` |
+| Unit tests (Caraya) | `…/Automatic Teller Machine/Tests/` |
 | Scripts | `tools/` |
 
 ## Rules
@@ -11,12 +12,14 @@
 - LabVIEW code is built and edited through the `labview-*` agents.
 
 ## Opening a pull request
-1. **Local diff:** `.\tools\Diff-VIs.ps1 -Base origin/<base branch>`
+1. **Tests:** `.\tools\Run-Tests.ps1` must pass → `test-report/index.html`.
+2. **Local diff:** `.\tools\Diff-VIs.ps1 -Base origin/<base branch>`
    → `diff-report/index.html` (LabVIEW's graphical diff) and `diff-report/differences.txt`.
-2. **Summarise** `differences.txt` for a human reviewer – the raw diff is far too granular.
+3. **Summarise** `differences.txt` for a human reviewer – the raw diff is far too granular.
    PR description:
    - **What & why** – 1–3 sentences
    - **How** – one bullet per changed VI, in plain words
    - **Review hints** – what to check, risks, what was not verified
+   - **Tests** – passed / total
    - **Full diff** – "LabVIEW diff report: see the CI comment below" (for anyone who doesn't trust the summary)
-3. `gh pr create` with that description.
+4. `gh pr create` with that description.
