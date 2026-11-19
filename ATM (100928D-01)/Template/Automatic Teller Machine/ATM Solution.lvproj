@@ -42,6 +42,23 @@
 		</Item>
 		<Item Name="ATM accounts.txt" Type="Document" URL="../ATM accounts.txt"/>
 		<Item Name="Automatic Teller Machine (ATM).vi" Type="VI" URL="../Automatic Teller Machine (ATM).vi"/>
+		<Item Name="Tests" Type="Folder">
+			<Item Name="Support" Type="Folder">
+				<Item Name="Create Accounts Fixture.vi" Type="VI" URL="../Tests/Support/Create Accounts Fixture.vi"/>
+				<Item Name="Prepare Report Path.vi" Type="VI" URL="../Tests/Support/Prepare Report Path.vi"/>
+			</Item>
+			<Item Name="Run Tests CLI.vi" Type="VI" URL="../Tests/Run Tests CLI.vi"/>
+			<Item Name="Test Build ATM Message.vi" Type="VI" URL="../Tests/Test Build ATM Message.vi"/>
+			<Item Name="Test Deposit Funds.vi" Type="VI" URL="../Tests/Test Deposit Funds.vi"/>
+			<Item Name="Test Find Account.vi" Type="VI" URL="../Tests/Test Find Account.vi"/>
+			<Item Name="Test Get Account.vi" Type="VI" URL="../Tests/Test Get Account.vi"/>
+			<Item Name="Test Get Accounts File Path.vi" Type="VI" URL="../Tests/Test Get Accounts File Path.vi"/>
+			<Item Name="Test Get Menu Action.vi" Type="VI" URL="../Tests/Test Get Menu Action.vi"/>
+			<Item Name="Test Get Pressed Button Index.vi" Type="VI" URL="../Tests/Test Get Pressed Button Index.vi"/>
+			<Item Name="Test Parse Amount.vi" Type="VI" URL="../Tests/Test Parse Amount.vi"/>
+			<Item Name="Test Update Account Balance.vi" Type="VI" URL="../Tests/Test Update Account Balance.vi"/>
+			<Item Name="Test Withdraw Funds.vi" Type="VI" URL="../Tests/Test Withdraw Funds.vi"/>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
