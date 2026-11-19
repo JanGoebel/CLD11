@@ -1,0 +1,3 @@
+# Written by every test run: the JUnit report (caraya-report.xml) and the
+# per-case accounts fixtures created by Support\Create Accounts Fixture.vi.
+results/
