@@ -6,6 +6,7 @@
 | LabVIEW 2026 project | `ATM (100928D-01)/Template/Automatic Teller Machine/ATM Solution.lvproj` |
 | Unit tests (Caraya) | `…/Automatic Teller Machine/Tests/` |
 | Scripts | `tools/` |
+| CI workflows | `.github/workflows/` |
 
 ## Rules
 - Work as GitHub user **JanGoebelsBot**: one branch + one PR per change, never push to `main`.
@@ -23,3 +24,7 @@
    - **Tests** – passed / total
    - **Full diff** – "LabVIEW diff report: see the CI comment below" (for anyone who doesn't trust the summary)
 4. `gh pr create` with that description.
+
+## CI (self-hosted runner on this PC, label `labview`)
+- **Every PR** (`pull-request.yml`): tests → diff → exe build; comments links to all three reports.
+- **Tag `v*`** (`release.yml`): tests → exe build → GitHub release with `ATM-<tag>.zip`.
