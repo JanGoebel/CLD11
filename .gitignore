@@ -9,3 +9,7 @@ Builds/
 # Windows
 Thumbs.db
 desktop.ini
+
+# Local reports (tools/Diff-VIs.ps1, tools/Run-Tests.ps1)
+diff-report/
+test-report/
