@@ -7,6 +7,8 @@ on: pull_request
 
 jobs:
   check:
+    # Public repo + runner on this PC: never run code from forks.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: [self-hosted, labview]      # this PC: LabVIEW 2026, Caraya, LabVIEW CLI
     permissions:
       contents: read
