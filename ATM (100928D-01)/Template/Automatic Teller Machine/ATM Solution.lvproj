@@ -19,12 +19,14 @@
 			<Item Name="ATM Menu Item.ctl" Type="VI" URL="../Controls/ATM Menu Item.ctl"/>
 			<Item Name="ATM Menu Side.ctl" Type="VI" URL="../Controls/ATM Menu Side.ctl"/>
 			<Item Name="ATM Menu.ctl" Type="VI" URL="../Controls/ATM Menu.ctl"/>
+			<Item Name="ATM Message Type.ctl" Type="VI" URL="../Controls/ATM Message Type.ctl"/>
 			<Item Name="ATM States.ctl" Type="VI" URL="../Controls/ATM States.ctl"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Build ATM Message.vi" Type="VI" URL="../SubVIs/Build ATM Message.vi"/>
+			<Item Name="Find Account.vi" Type="VI" URL="../SubVIs/Find Account.vi"/>
 			<Item Name="Get Accounts File Path.vi" Type="VI" URL="../SubVIs/Get Accounts File Path.vi"/>
 			<Item Name="Read Accounts.vi" Type="VI" URL="../SubVIs/Read Accounts.vi"/>
-			<Item Name="Find Account.vi" Type="VI" URL="../SubVIs/Find Account.vi"/>
 			<Item Name="Update Account Balance.vi" Type="VI" URL="../SubVIs/Update Account Balance.vi"/>
 		</Item>
 		<Item Name="ATM accounts.txt" Type="Document" URL="../ATM accounts.txt"/>
