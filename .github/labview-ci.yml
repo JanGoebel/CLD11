@@ -2,7 +2,7 @@
 # Records what was installed so the install can be reviewed, re-run, or upgraded.
 schemaVersion: 1
 installedVersion: 5.0.5
-installedAt: 2026-11-20T14:13:27Z
+installedAt: 2026-11-22T22:46:56Z
 provider: github
 source:
   repo: ni/LabVIEW-CI-CD-Toolkit
@@ -20,3 +20,4 @@ activities:
   - vidiff
   - snapshots
   - dashboard
+  - custom-image
