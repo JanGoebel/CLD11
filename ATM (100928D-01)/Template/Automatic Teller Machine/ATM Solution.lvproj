@@ -53,11 +53,13 @@
 			<Item Name="Test Find Account.vi" Type="VI" URL="../Tests/Test Find Account.vi"/>
 			<Item Name="Test Get Account.vi" Type="VI" URL="../Tests/Test Get Account.vi"/>
 			<Item Name="Test Get Accounts File Path.vi" Type="VI" URL="../Tests/Test Get Accounts File Path.vi"/>
+			<Item Name="Test Get Main Menu.vi" Type="VI" URL="../Tests/Test Get Main Menu.vi"/>
 			<Item Name="Test Get Menu Action.vi" Type="VI" URL="../Tests/Test Get Menu Action.vi"/>
 			<Item Name="Test Get Pressed Button Index.vi" Type="VI" URL="../Tests/Test Get Pressed Button Index.vi"/>
 			<Item Name="Test Parse Amount.vi" Type="VI" URL="../Tests/Test Parse Amount.vi"/>
 			<Item Name="Test Update Account Balance.vi" Type="VI" URL="../Tests/Test Update Account Balance.vi"/>
 			<Item Name="Test Withdraw Funds.vi" Type="VI" URL="../Tests/Test Withdraw Funds.vi"/>
+			<Item Name="Test Withdraw Funds Fast Cash 100.vi" Type="VI" URL="../Tests/Test Withdraw Funds Fast Cash 100.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
