@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "repo": "JanGoebel/CLD11",
+  "sha": "935cc4e34362b03f8d4a9acbefa3a73d1a0fc073",
+  "revisions": [
+    {
+      "sha": "935cc4e34362b03f8d4a9acbefa3a73d1a0fc073",
+      "short": "935cc4e",
+      "message": "Merge #38: NI LabVIEW CI dashboard (VIDiff, VI Browser, Pages dashboard)",
+      "author": "JanGoebelsBot",
+      "date": "2026-11-22T22:43:37Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "3a0af592f0e9eb4371db945b9e1a53e4192cd299",
+      "short": "3a0af59",
+      "message": "Add NI LabVIEW CI dashboard: VIDiff, VI Browser and Pages dashboard",
+      "author": "JanGoebelsBot",
+      "date": "2026-11-20T14:14:01Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "2b36c947cc7c552ec6ae956f6455155f79a8a582",
+      "short": "2b36c94",
+      "message": "Add .gitignore for LabVIEW generated files",
+      "author": "Jan Goebel",
+      "date": "2026-11-07T01:14:42Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "c5b2efed7fa126213a7f6e2dbf06a7b79764c6db",
+      "short": "c5b2efe",
+      "message": "Add CLD sample exam ATM (100928D-01) with LabVIEW project",
+      "author": "Jan Goebel",
+      "date": "2026-11-07T01:08:31Z",
+      "project": true,
+      "dep_only": false
+    }
+  ],
+  "config": {
+    "use": "",
+    "linuxUse": "",
+    "actions": {},
+    "vipc": [],
+    "dragon": [],
+    "hasVipcList": false,
+    "hasDragonList": false
+  },
+  "vipc": [],
+  "nipm": [
+    {
+      "name": "LabVIEW",
+      "source": "NI Package Manager",
+      "labview": true,
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "LabVIEW runtime and development packages from the NI feeds."
+    },
+    {
+      "name": "VI Analyzer support",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-viawin-labview-support"
+        ],
+        "linux": [
+          "ni-vialinux-labview-support"
+        ]
+      },
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "NI VI Analyzer support package used by the analyzer runners."
+    },
+    {
+      "name": "NI Unit Test Framework",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-utf-labview-support"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "NI UTF support package used by the Windows unit-test runner."
+    },
+    {
+      "key": "vipm",
+      "name": "VI Package Manager",
+      "source": "JKI installer / Debian",
+      "packages": {
+        "windows": [
+          "ni-vipm"
+        ],
+        "linux": [
+          "vipm"
+        ]
+      },
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "Windows installs VIPM using the JKI installer and verifies its CLI against the target LabVIEW. Linux installs the native Debian package."
+    }
+  ],
+  "dragon": {
+    "available": true,
+    "column": "windows",
+    "ready": false,
+    "health": "",
+    "manifest_version": "",
+    "files": [],
+    "install_set": [],
+    "conflicts": []
+  },
+  "system": [
+    {
+      "name": "VI Browser toimages runner",
+      "source": "Repository Go code",
+      "path": ".github/labview/toimages/main.go",
+      "details": "Batch runner compiled from repo Go source; Linux uses the toimages GHCR image and Windows builds runner.exe in the workflow.",
+      "platforms": {
+        "windows": {
+          "present": false,
+          "label": ""
+        },
+        "linux": {
+          "present": true,
+          "label": "toimages image"
+        }
+      }
+    },
+    {
+      "name": "lvctl render engine",
+      "source": "Repository Go code + embedded VIs",
+      "path": ".github/labview/toimages/_ni/labview/lvctl",
+      "details": "Renderer used by VI Browser to drive LabVIEW and emit position-aware frame JSON.",
+      "platforms": {
+        "windows": {
+          "present": false,
+          "label": ""
+        },
+        "linux": {
+          "present": true,
+          "label": "toimages image"
+        }
+      }
+    }
+  ],
+  "columns": [
+    {
+      "key": "windows",
+      "label": "Windows",
+      "platform": "windows",
+      "defaultTag": "latest",
+      "tag": "latest",
+      "ready": false,
+      "installer": "vipm",
+      "verification": {},
+      "packages": [],
+      "failed_packages": [],
+      "nipkg_ready": false,
+      "vipm_verified": false,
+      "nipkg_packages": [],
+      "labview_version": "",
+      "version": "latest"
+    },
+    {
+      "key": "linux",
+      "label": "Linux",
+      "platform": "linux",
+      "defaultTag": "latest",
+      "tag": "latest",
+      "ready": false,
+      "installer": "vipm",
+      "verification": {},
+      "packages": [],
+      "failed_packages": [],
+      "nipkg_ready": false,
+      "vipm_verified": false,
+      "nipkg_packages": [],
+      "labview_version": "",
+      "version": "latest"
+    }
+  ],
+  "linux_lvpm_candidate": null
+}
