@@ -1,0 +1,34 @@
+{
+  "schema": 3,
+  "platform": "linux",
+  "version": "linux-4ce478ba9bb6",
+  "labview_version": "2026",
+  "labview_bitness": "64",
+  "base_image": "ghcr.io/elijah286/labview-ci-with-containers-labview:linux-2026",
+  "base_digest": "sha256:5f29fff95ef4c8bef793a0d571b7fb40e0c5a5e9807532a785c801acb0e75226",
+  "seed_image": "",
+  "seed_digest": "",
+  "worker_layer": "",
+  "copied_from_base": false,
+  "image_ref": "ghcr.io/jangoebel/cld11-labview:linux-4ce478ba9bb6",
+  "build_date": "2026-11-22T22:59:27Z",
+  "git_sha": "c9e2baf68e910b1fd2525c08fd21dd7f0bdb2005",
+  "dependency_sha": "c9e2baf68e910b1fd2525c08fd21dd7f0bdb2005",
+  "run_url": "https://github.com/JanGoebel/CLD11/actions/runs/45080708441",
+  "vipc": [],
+  "vipm_raw": "",
+  "vipm_inventory": {
+    "status": "unverified",
+    "target_verified": false,
+    "packages": []
+  },
+  "vipm_packages": [],
+  "nipkg_raw": "",
+  "nipkg_inventory": {
+    "source": "nipkg list-installed",
+    "status": "unavailable"
+  },
+  "nipkg_packages": [],
+  "dpkg_raw": "",
+  "dpkg_packages": []
+}
