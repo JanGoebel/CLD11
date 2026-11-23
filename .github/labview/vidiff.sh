@@ -112,15 +112,23 @@ for REL_PATH in "${VI_FILES[@]}"; do
     TYPE=""
     if $BASE_EXISTS && $HEAD_EXISTS; then
         TYPE="modified"
-        run_labview_operation "${OUT_DIR}/comparison.xml" \
-            -OperationName    CreateComparisonReport \
-            -LabVIEWPath      "$LABVIEW_EXE" \
-            -VI1              "$BASE_PATH" \
-            -VI2              "$HEAD_PATH" \
-            -ReportType       XML \
-            -ReportPath       "${OUT_DIR}/comparison.xml" \
-            -LogToConsole     TRUE \
-            -Headless || { echo "  ERROR: CreateComparisonReport failed"; ERRORS=$((ERRORS+1)); continue; }
+        COMPARE_ARGS=(
+            -OperationName    CreateComparisonReport
+            -LabVIEWPath      "$LABVIEW_EXE"
+            -VI1              "$BASE_PATH"
+            -VI2              "$HEAD_PATH"
+            -ReportType       XML
+            -ReportPath       "${OUT_DIR}/comparison.xml"
+            -LogToConsole     TRUE
+            -Headless
+        )
+        # LabVIEW 2026 can crash (error 66) while comparing the cosmetic block-diagram
+        # changes of some VIs. If the full comparison fails, retry this one VI with
+        # cosmetic block-diagram changes ignored (-nobdcosm) instead of giving up.
+        run_labview_operation "${OUT_DIR}/comparison.xml" "${COMPARE_ARGS[@]}" || {
+            echo "  Retrying ${REL_PATH} without cosmetic block-diagram changes (-nobdcosm)."
+            reset_labview_session && run_labview_operation "${OUT_DIR}/comparison.xml" "${COMPARE_ARGS[@]}" -nobdcosm
+        } || { echo "  ERROR: CreateComparisonReport failed"; ERRORS=$((ERRORS+1)); continue; }
         python3 "${OPS_DIR}/build-vidiff-report.py" "${OUT_DIR}/comparison.xml" "${OUT_DIR}/index.html" || {
             echo "  ERROR: Could not render comparison XML"; ERRORS=$((ERRORS+1)); continue;
         }
