@@ -1,0 +1,9 @@
+LabVIEWCLI started logging in file:  /tmp/lvtemporary_831623.log
+Using LabVIEW: "/usr/local/natinst/LabVIEW-2026-64/labviewprofull"
+LabVIEW launched successfully.
+Connection established with LabVIEW at port number 3363.
+
+Operation output: 
+Report can be found at /workspace/ci-out/vidiff/ATM__100928D-01_-Template-Automatic_Teller_Machine-Automatic_Teller_Machine__ATM_.vi/comparison.xml
+CreateComparisonReport operation succeeded.
+

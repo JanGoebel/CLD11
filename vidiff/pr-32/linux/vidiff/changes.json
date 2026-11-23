@@ -1,0 +1,30 @@
+{
+  "platform": "linux",
+  "files": [
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Automatic Teller Machine (ATM).vi",
+      "type": "modified",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Automatic_Teller_Machine__ATM_.vi/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Data.ctl",
+      "type": "modified",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_Data.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM UI Mode.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_UI_Mode.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Clear and Focus Input.vi",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-SubVIs-Clear_and_Focus_Input.vi/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Set Session Controls.vi",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-SubVIs-Set_Session_Controls.vi/index.html"
+    }
+  ]
+}

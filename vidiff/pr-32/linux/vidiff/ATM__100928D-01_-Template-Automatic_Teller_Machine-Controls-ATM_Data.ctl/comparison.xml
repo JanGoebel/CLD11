@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><?xml-stylesheet type="text/xsl" href="comparison_files/DefaultStyle_SigCmp_web.xsl"?>
+<report>
+
+  <basicInfo genTime="11/23/2026" version="1.0"/>
+
+  <detailInfo>
+    <comparedVIs note1="" note2="" path1="/workspace-base/ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Data.ctl" path2="/workspace/ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Data.ctl">
+      <statistic>
+        <comparedItems>
+          <fpItems cosmItem="T" funcItem="T"/>
+          <bdItems cosmItem="T" funcItem="T"/>
+          <atrItems atrItem="T"/>
+        </comparedItems>
+        <numChanges href="#fpfunc" num="1" type="Front Panel"/>
+        <numChanges href="#fpcosm" num="1" type="Front Panel Position/Size"/>
+        <numChanges href="#bdfunc" num="0" type="Block Diagram Functional"/>
+        <numChanges href="#bdcosm" num="0" type="Block Diagram Cosmetic"/>
+        <numChanges href="#atr" num="1" type="VI Attribute"/>
+      </statistic>
+      <fpChanges cosmAnchor="fpcosm" funcAnchor="fpfunc">
+        <funcChanges detailDesc="changed from &quot;&quot; to &quot;Card Inserted Entered Text&quot;" diffType="cluster elements added/deleted" imagePath1="comparison_files/0_0_42_42_1.png" imagePath2="comparison_files/0_0_42_42_2.png" objLabel="ATM Data" objType="Cluster"/>
+        <cosmChanges detailDesc="changed from &quot;157*949&quot; to &quot;157*1022&quot;" diffType="resized" imagePath1="comparison_files/0_1_42_42_1.png" imagePath2="comparison_files/0_1_42_42_2.png" objLabel="ATM Data" objType="Cluster"/>
+      </fpChanges>
+      <bdChanges cosmAnchor="bdcosm" funcAnchor="bdfunc"/>
+      <attrChanges atrAnchor="atr">
+        <attrChange attrType="" detailDesc="" diffType="VI icon"/>
+      </attrChanges>
+    </comparedVIs>
+  </detailInfo>
+
+</report>
