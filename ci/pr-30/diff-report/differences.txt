@@ -1,0 +1,12 @@
+﻿Changed files (git diff --stat origin/feature/17-messages...HEAD):
+ .../Automatic Teller Machine/ATM Solution.lvproj        |   4 ++++
+ .../Automatic Teller Machine/SubVIs/Get Main Menu.vi    | Bin 0 -> 12973 bytes
+ .../Automatic Teller Machine/SubVIs/Get Menu Action.vi  | Bin 0 -> 11879 bytes
+ .../Automatic Teller Machine/SubVIs/Get Menu Labels.vi  | Bin 0 -> 10431 bytes
+ .../SubVIs/Get Pressed Button Index.vi                  | Bin 0 -> 7496 bytes
+ 5 files changed, 4 insertions(+)
+
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Main Menu.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Menu Action.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Menu Labels.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Pressed Button Index.vi (added)
