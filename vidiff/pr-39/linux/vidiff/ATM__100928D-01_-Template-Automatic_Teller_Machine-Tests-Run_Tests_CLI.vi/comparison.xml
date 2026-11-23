@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><?xml-stylesheet type="text/xsl" href="comparison_files/DefaultStyle_SigCmp_web.xsl"?>
+<report>
+
+  <basicInfo genTime="11/23/2026" version="1.0"/>
+
+  <detailInfo>
+    <comparedVIs note1="" note2="" path1="/workspace-base/ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Run Tests CLI.vi" path2="/workspace/ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Run Tests CLI.vi">
+      <statistic>
+        <comparedItems>
+          <fpItems cosmItem="T" funcItem="T"/>
+          <bdItems cosmItem="T" funcItem="T"/>
+          <atrItems atrItem="T"/>
+        </comparedItems>
+        <numChanges href="#fpfunc" num="0" type="Front Panel"/>
+        <numChanges href="#fpcosm" num="0" type="Front Panel Position/Size"/>
+        <numChanges href="#bdfunc" num="12" type="Block Diagram Functional"/>
+        <numChanges href="#bdcosm" num="47" type="Block Diagram Cosmetic"/>
+        <numChanges href="#atr" num="0" type="VI Attribute"/>
+      </statistic>
+      <fpChanges cosmAnchor="fpcosm" funcAnchor="fpfunc"/>
+      <bdChanges cosmAnchor="bdcosm" funcAnchor="bdfunc">
+        <cosmChanges detailDesc="changed from &quot;(-42,3)&quot; to &quot;(-42,3)&quot;" diffType="moved" imagePath1="comparison_files/0_0_20163_20179_1.png" imagePath2="comparison_files/0_0_20163_20179_2.png" objLabel="status" objType="Boolean Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(-26,3)&quot; to &quot;(-26,3)&quot;" diffType="moved" imagePath1="comparison_files/0_1_20169_20185_1.png" imagePath2="comparison_files/0_1_20169_20185_2.png" objLabel="code" objType="Numeric Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(-13,3)&quot; to &quot;(-13,3)&quot;" diffType="moved" imagePath1="comparison_files/0_2_20177_20193_1.png" imagePath2="comparison_files/0_2_20177_20193_2.png" objLabel="source" objType="String Constant"/>
+        <funcChanges detailDesc="changed from &quot;Failed Verdict&quot; to &quot;report file name&quot;" diffType="data type name" imagePath1="comparison_files/0_3_4525_4399_1.png" imagePath2="comparison_files/0_3_4525_4399_2.png" objLabel="report file name" objType="String Constant"/>
+        <funcChanges detailDesc="changed from &quot;&quot;FAILED - a Caraya test failed or no report was written.&quot;&quot; to &quot;&quot;caraya-report.xml&quot;&quot;" diffType="data value" imagePath1="comparison_files/0_4_4525_4399_1.png" imagePath2="comparison_files/0_4_4525_4399_2.png" objLabel="report file name" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(712,551) 264*16&quot; to &quot;(102,751) 90*16&quot;" diffType="moved/resized" imagePath1="comparison_files/0_5_4525_4399_1.png" imagePath2="comparison_files/0_5_4525_4399_2.png" objLabel="report file name" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(176,657)&quot; to &quot;(176,775)&quot;" diffType="moved" imagePath1="comparison_files/0_6_4398_4398_1.png" imagePath2="comparison_files/0_6_4398_4398_2.png" objLabel="no error" objType="Cluster Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(208,377)&quot; to &quot;(208,436)&quot;" diffType="moved" imagePath1="comparison_files/0_7_4200_4200_1.png" imagePath2="comparison_files/0_7_4200_4200_2.png" objLabel="" objType="Current VI's Path"/>
+        <cosmChanges detailDesc="changed from &quot;(208,637)&quot; to &quot;(208,755)&quot;" diffType="moved" imagePath1="comparison_files/0_8_4499_4499_1.png" imagePath2="comparison_files/0_8_4499_4499_2.png" objLabel="Prepare Report Path.vi" objType="SubVI"/>
+        <cosmChanges detailDesc="changed from &quot;(252,370)&quot; to &quot;(252,429)&quot;" diffType="moved" imagePath1="comparison_files/0_9_4210_4210_1.png" imagePath2="comparison_files/0_9_4210_4210_2.png" objLabel="Strip Path" objType="Strip Path"/>
+        <cosmChanges detailDesc="changed from &quot;(266,629)&quot; to &quot;(266,747)&quot;" diffType="moved" imagePath1="comparison_files/0_10_4535_4535_1.png" imagePath2="comparison_files/0_10_4535_4535_2.png" objLabel="" objType="Path To String"/>
+        <funcChanges detailDesc="added at (310,740)" diffType="added" imagePath1="comparison_files/0_11_0_4311_1.png" imagePath2="comparison_files/0_11_0_4311_2.png" objLabel="name or relative path 12" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(300,570)&quot; to &quot;(337,570)&quot;" diffType="moved" imagePath1="comparison_files/0_12_4308_4308_1.png" imagePath2="comparison_files/0_12_4308_4308_2.png" objLabel="name or relative path 9" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(305,393)&quot; to &quot;(342,393)&quot;" diffType="moved" imagePath1="comparison_files/0_13_4305_4305_1.png" imagePath2="comparison_files/0_13_4305_4305_2.png" objLabel="name or relative path 6" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(313,622)&quot; to &quot;(350,629)&quot;" diffType="moved" imagePath1="comparison_files/0_14_4309_4309_1.png" imagePath2="comparison_files/0_14_4309_4309_2.png" objLabel="name or relative path 10" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(329,452)&quot; to &quot;(366,452)&quot;" diffType="moved" imagePath1="comparison_files/0_15_4306_4306_1.png" imagePath2="comparison_files/0_15_4306_4306_2.png" objLabel="name or relative path 7" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(342,511)&quot; to &quot;(379,511)&quot;" diffType="moved" imagePath1="comparison_files/0_16_4307_4307_1.png" imagePath2="comparison_files/0_16_4307_4307_2.png" objLabel="name or relative path 8" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(346,334)&quot; to &quot;(383,334)&quot;" diffType="moved" imagePath1="comparison_files/0_17_4304_4304_1.png" imagePath2="comparison_files/0_17_4304_4304_2.png" objLabel="name or relative path 5" objType="String Constant"/>
+        <funcChanges detailDesc="changed from &quot;report file name&quot; to &quot;name or relative path 11&quot;" diffType="data type name" imagePath1="comparison_files/0_18_4399_4310_1.png" imagePath2="comparison_files/0_18_4399_4310_2.png" objLabel="name or relative path 11" objType="String Constant"/>
+        <funcChanges detailDesc="changed from &quot;&quot;caraya-report.xml&quot;&quot; to &quot;&quot;Test Get Main Menu.vi&quot;&quot;" diffType="data value" imagePath1="comparison_files/0_19_4399_4310_1.png" imagePath2="comparison_files/0_19_4399_4310_2.png" objLabel="name or relative path 11" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(102,633) 90*16&quot; to &quot;(387,688) 112*16&quot;" diffType="moved/resized" imagePath1="comparison_files/0_20_4399_4310_1.png" imagePath2="comparison_files/0_20_4399_4310_2.png" objLabel="name or relative path 11" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(355,275)&quot; to &quot;(392,275)&quot;" diffType="moved" imagePath1="comparison_files/0_21_4303_4303_1.png" imagePath2="comparison_files/0_21_4303_4303_2.png" objLabel="name or relative path 4" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(356,98)&quot; to &quot;(393,98)&quot;" diffType="moved" imagePath1="comparison_files/0_22_4300_4300_1.png" imagePath2="comparison_files/0_22_4300_4300_2.png" objLabel="name or relative path 1" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(360,157)&quot; to &quot;(397,157)&quot;" diffType="moved" imagePath1="comparison_files/0_23_4301_4301_1.png" imagePath2="comparison_files/0_23_4301_4301_2.png" objLabel="name or relative path 2" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(364,216)&quot; to &quot;(401,216)&quot;" diffType="moved" imagePath1="comparison_files/0_24_4302_4302_1.png" imagePath2="comparison_files/0_24_4302_4302_2.png" objLabel="name or relative path 3" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(480,75)&quot; to &quot;(517,75)&quot;" diffType="moved" imagePath1="comparison_files/0_25_4400_4400_1.png" imagePath2="comparison_files/0_25_4400_4400_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,134)&quot; to &quot;(517,134)&quot;" diffType="moved" imagePath1="comparison_files/0_26_4401_4401_1.png" imagePath2="comparison_files/0_26_4401_4401_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,193)&quot; to &quot;(517,193)&quot;" diffType="moved" imagePath1="comparison_files/0_27_4402_4402_1.png" imagePath2="comparison_files/0_27_4402_4402_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,252)&quot; to &quot;(517,252)&quot;" diffType="moved" imagePath1="comparison_files/0_28_4403_4403_1.png" imagePath2="comparison_files/0_28_4403_4403_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,311)&quot; to &quot;(517,311)&quot;" diffType="moved" imagePath1="comparison_files/0_29_4404_4404_1.png" imagePath2="comparison_files/0_29_4404_4404_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,370)&quot; to &quot;(517,370)&quot;" diffType="moved" imagePath1="comparison_files/0_30_4405_4405_1.png" imagePath2="comparison_files/0_30_4405_4405_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,429)&quot; to &quot;(517,429)&quot;" diffType="moved" imagePath1="comparison_files/0_31_4406_4406_1.png" imagePath2="comparison_files/0_31_4406_4406_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,488)&quot; to &quot;(517,488)&quot;" diffType="moved" imagePath1="comparison_files/0_32_4407_4407_1.png" imagePath2="comparison_files/0_32_4407_4407_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,547)&quot; to &quot;(517,547)&quot;" diffType="moved" imagePath1="comparison_files/0_33_4408_4408_1.png" imagePath2="comparison_files/0_33_4408_4408_2.png" objLabel="" objType="Build Path"/>
+        <cosmChanges detailDesc="changed from &quot;(480,606)&quot; to &quot;(517,606)&quot;" diffType="moved" imagePath1="comparison_files/0_34_4409_4409_1.png" imagePath2="comparison_files/0_34_4409_4409_2.png" objLabel="" objType="Build Path"/>
+        <funcChanges detailDesc="added at (517,665)" diffType="added" imagePath1="comparison_files/0_35_0_4410_1.png" imagePath2="comparison_files/0_35_0_4410_2.png" objLabel="" objType="Build Path"/>
+        <funcChanges detailDesc="added at (517,724)" diffType="added" imagePath1="comparison_files/0_36_0_4411_1.png" imagePath2="comparison_files/0_36_0_4411_2.png" objLabel="" objType="Build Path"/>
+        <funcChanges detailDesc="changed from &quot;11&quot; to &quot;13&quot;" diffType="number of terminals" imagePath1="comparison_files/0_37_4240_4240_1.png" imagePath2="comparison_files/0_37_4240_4240_2.png" objLabel="" objType="Build Array"/>
+        <cosmChanges detailDesc="changed from &quot;(558,559)&quot; to &quot;(599,661)&quot;" diffType="moved" imagePath1="comparison_files/0_38_4240_4240_1.png" imagePath2="comparison_files/0_38_4240_4240_2.png" objLabel="" objType="Build Array"/>
+        <cosmChanges detailDesc="changed from &quot;(600,617)&quot; to &quot;(641,735)&quot;" diffType="moved" imagePath1="comparison_files/0_39_4250_4250_1.png" imagePath2="comparison_files/0_39_4250_4250_2.png" objLabel="Interactive (T)" objType="Boolean Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(626,637)&quot; to &quot;(667,755)&quot;" diffType="moved" imagePath1="comparison_files/0_40_4260_4260_1.png" imagePath2="comparison_files/0_40_4260_4260_2.png" objLabel="Caraya.lvlib:Run Test (Array Path).vi" objType="SubVI"/>
+        <cosmChanges detailDesc="changed from &quot;(684,637)&quot; to &quot;(725,755)&quot;" diffType="moved" imagePath1="comparison_files/0_41_4500_4500_1.png" imagePath2="comparison_files/0_41_4500_4500_2.png" objLabel="Check if File or Folder Exists.vi" objType="SubVI"/>
+        <funcChanges detailDesc="changed from &quot;Output Format&quot; to &quot;Failed Verdict&quot;" diffType="data type name" imagePath1="comparison_files/0_42_4536_4525_1.png" imagePath2="comparison_files/0_42_4536_4525_2.png" objLabel="Failed Verdict" objType="String Constant"/>
+        <funcChanges detailDesc="changed from &quot;&quot;%s Caraya error code: %d. JUnit report: %s&quot;&quot; to &quot;&quot;FAILED - a Caraya test failed or no report was written.&quot;&quot;" diffType="data value" imagePath1="comparison_files/0_43_4536_4525_1.png" imagePath2="comparison_files/0_43_4536_4525_2.png" objLabel="Failed Verdict" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(821,519) 213*16&quot; to &quot;(753,669) 264*16&quot;" diffType="moved/resized" imagePath1="comparison_files/0_44_4536_4525_1.png" imagePath2="comparison_files/0_44_4536_4525_2.png" objLabel="Failed Verdict" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(742,579)&quot; to &quot;(783,697)&quot;" diffType="moved" imagePath1="comparison_files/0_45_4505_4505_1.png" imagePath2="comparison_files/0_45_4505_4505_2.png" objLabel="" objType="Unbundle By Name"/>
+        <cosmChanges detailDesc="changed from &quot;(742,630)&quot; to &quot;(783,748)&quot;" diffType="moved" imagePath1="comparison_files/0_46_4510_4510_1.png" imagePath2="comparison_files/0_46_4510_4510_2.png" objLabel="" objType="Not"/>
+        <cosmChanges detailDesc="changed from &quot;(812,576)&quot; to &quot;(853,694)&quot;" diffType="moved" imagePath1="comparison_files/0_47_4526_4526_1.png" imagePath2="comparison_files/0_47_4526_4526_2.png" objLabel="Passed Verdict" objType="String Constant"/>
+        <funcChanges detailDesc="added at (862,637)" diffType="added" imagePath1="comparison_files/0_48_0_4536_1.png" imagePath2="comparison_files/0_48_0_4536_2.png" objLabel="Output Format" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(825,631)&quot; to &quot;(866,749)&quot;" diffType="moved" imagePath1="comparison_files/0_49_4515_4515_1.png" imagePath2="comparison_files/0_49_4515_4515_2.png" objLabel="" objType="Or"/>
+        <cosmChanges detailDesc="changed from &quot;(873,636)&quot; to &quot;(914,754)&quot;" diffType="moved" imagePath1="comparison_files/0_50_4520_4520_1.png" imagePath2="comparison_files/0_50_4520_4520_2.png" objLabel="" objType="Boolean To (0,1)"/>
+        <cosmChanges detailDesc="changed from &quot;(998,591)&quot; to &quot;(1039,709)&quot;" diffType="moved" imagePath1="comparison_files/0_51_4530_4530_1.png" imagePath2="comparison_files/0_51_4530_4530_2.png" objLabel="" objType="Select"/>
+        <cosmChanges detailDesc="changed from &quot;(1053,591)&quot; to &quot;(1094,709)&quot;" diffType="moved" imagePath1="comparison_files/0_52_4540_4540_1.png" imagePath2="comparison_files/0_52_4540_4540_2.png" objLabel="" objType="Format Into String"/>
+        <cosmChanges detailDesc="changed from &quot;(1111,590)&quot; to &quot;(1152,708)&quot;" diffType="moved" imagePath1="comparison_files/0_53_4545_4545_1.png" imagePath2="comparison_files/0_53_4545_4545_2.png" objLabel="Clear Errors.vi" objType="SubVI"/>
+        <cosmChanges detailDesc="changed from &quot;(1167,595)&quot; to &quot;(1208,713)&quot;" diffType="moved" imagePath1="comparison_files/0_54_20036_20036_1.png" imagePath2="comparison_files/0_54_20036_20036_2.png" objLabel="Exit Code" objType="Front Panel Terminal"/>
+        <cosmChanges detailDesc="changed from &quot;(1167,630)&quot; to &quot;(1208,748)&quot;" diffType="moved" imagePath1="comparison_files/0_55_20047_20047_1.png" imagePath2="comparison_files/0_55_20047_20047_2.png" objLabel="Output" objType="Front Panel Terminal"/>
+        <funcChanges detailDesc="" diffType="wiring changes" imagePath1="comparison_files/0_56_1.png" imagePath2="comparison_files/0_56_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(40,630)&quot; to &quot;(40,748)&quot;" diffType="moved" imagePath1="comparison_files/1_0_20024_20024_1.png" imagePath2="comparison_files/1_0_20024_20024_2.png" objLabel="Command Line Arguments" objType="Front Panel Terminal"/>
+        <cosmChanges detailDesc="" diffType="front/back order of objects" imagePath1="comparison_files/2_0_1.png" imagePath2="comparison_files/2_0_2.png" objLabel="" objType=""/>
+      </bdChanges>
+      <attrChanges atrAnchor="atr"/>
+    </comparedVIs>
+  </detailInfo>
+
+</report>

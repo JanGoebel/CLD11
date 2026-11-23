@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><?xml-stylesheet type="text/xsl" href="comparison_files/DefaultStyle_SigCmp_web.xsl"?>
+<report>
+
+  <basicInfo genTime="11/23/2026" version="1.0"/>
+
+  <detailInfo>
+    <comparedVIs note1="" note2="" path1="/workspace-base/ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Main Menu.vi" path2="/workspace/ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Main Menu.vi">
+      <statistic>
+        <comparedItems>
+          <fpItems cosmItem="T" funcItem="T"/>
+          <bdItems cosmItem="T" funcItem="T"/>
+          <atrItems atrItem="T"/>
+        </comparedItems>
+        <numChanges href="#fpfunc" num="1" type="Front Panel"/>
+        <numChanges href="#fpcosm" num="0" type="Front Panel Position/Size"/>
+        <numChanges href="#bdfunc" num="1" type="Block Diagram Functional"/>
+        <numChanges href="#bdcosm" num="7" type="Block Diagram Cosmetic"/>
+        <numChanges href="#atr" num="1" type="VI Attribute"/>
+      </statistic>
+      <fpChanges cosmAnchor="fpcosm" funcAnchor="fpfunc">
+        <funcChanges detailDesc="changed from &quot;15&quot; to &quot;16&quot;" diffType="number of text items" imagePath1="comparison_files/1_0_550_646_1.png" imagePath2="comparison_files/1_0_550_646_2.png" objLabel="" objType="Enum"/>
+      </fpChanges>
+      <bdChanges cosmAnchor="bdcosm" funcAnchor="bdfunc">
+        <cosmChanges detailDesc="changed from &quot;58*41&quot; to &quot;107*41&quot;" diffType="resized" imagePath1="comparison_files/0_0_288_288_1.png" imagePath2="comparison_files/0_0_288_288_2.png" objLabel="Item 1" objType="Type Definition"/>
+        <cosmChanges detailDesc="changed from &quot;58*41&quot; to &quot;107*41&quot;" diffType="resized" imagePath1="comparison_files/0_1_293_293_1.png" imagePath2="comparison_files/0_1_293_293_2.png" objLabel="" objType="Cluster Constant"/>
+        <cosmChanges detailDesc="changed from &quot;34*16&quot; to &quot;83*16&quot;" diffType="resized" imagePath1="comparison_files/0_2_308_308_1.png" imagePath2="comparison_files/0_2_308_308_2.png" objLabel="Label" objType="String Constant"/>
+        <cosmChanges detailDesc="changed from &quot;52*16&quot; to &quot;101*16&quot;" diffType="resized" imagePath1="comparison_files/0_3_315_315_1.png" imagePath2="comparison_files/0_3_315_315_2.png" objLabel="Action" objType="Type Definition"/>
+        <cosmChanges detailDesc="changed from &quot;52*16&quot; to &quot;101*16&quot;" diffType="resized" imagePath1="comparison_files/0_4_320_767_1.png" imagePath2="comparison_files/0_4_320_767_2.png" objLabel="" objType="Enum Constant"/>
+        <cosmChanges detailDesc="changed from &quot;15&quot; to &quot;16&quot;" diffType="number of text items" imagePath1="comparison_files/0_5_320_767_1.png" imagePath2="comparison_files/0_5_320_767_2.png" objLabel="" objType="Enum Constant"/>
+        <cosmChanges detailDesc="changed from &quot;(57,23)&quot; to &quot;(106,23)&quot;" diffType="moved" imagePath1="comparison_files/0_6_323_775_1.png" imagePath2="comparison_files/0_6_323_775_2.png" objLabel="" objType="Numeric Text"/>
+        <funcChanges detailDesc="changed from &quot;'Main Menu': typedef 'ATM Menu.ctl'&#xA;cluster of 2 elements &#xA;    'Left': typedef 'ATM Menu Side.ctl'&#xA;    cluster of 3 elements &#xA;        'Item 1': typedef 'ATM Menu Item.ctl'&#xA;        cluster of 2 elements &#xA;            'Label': string &#xA;            'Action':&quot; to &quot;'Main Menu': typedef 'ATM Menu.ctl'&#xA;cluster of 2 elements &#xA;    'Left': typedef 'ATM Menu Side.ctl'&#xA;    cluster of 3 elements &#xA;        'Item 1': typedef 'ATM Menu Item.ctl'&#xA;        cluster of 2 elements &#xA;            'Label': string &#xA;            'Action':&quot;" diffType="numeric representation" imagePath1="comparison_files/0_7_4813_4813_1.png" imagePath2="comparison_files/0_7_4813_4813_2.png" objLabel="Main Menu" objType="Front Panel Terminal"/>
+      </bdChanges>
+      <attrChanges atrAnchor="atr">
+        <attrChange attrType="Documentation (VI Properties)" detailDesc="changed from &quot;Returns the ATM Main Menu as data: for each of the six function buttons the label shown beside it and the state the main state machine runs when it is pressed. Left side: None, Balance Inquiry, Return Card and Terminate. Right side: Deposit, Withdraw, Fast Cash $50. To change the menu, edit the Main Menu constant; the main state machine needs no change.&#xA;&#xA;Error behaviour: error in is passed to error out unchanged; the menu is returned in every case.&quot; to &quot;Returns the ATM Main Menu as data: for each of the six function buttons the label shown beside it and the state the main state machine runs when it is pressed. Left side: Fast Cash $100, Balance Inquiry, Return Card and Terminate. Right side: Deposit, Withdraw, Fast Cash $50. To change a label or to move an item to another button, edit the Main Menu constant; the main state machine needs no change for that. An item with a NEW action also needs a new item in ATM States.ctl and a case for it in the main state machine - an action without a case of its own runs the &quot;None&quot;, Default case and does nothing.&#xD;&#xA;&#xD;&#xA;Error behaviour: error in is passed to error out unchanged; the menu is returned in every case.&quot;" diffType="description text"/>
+      </attrChanges>
+    </comparedVIs>
+  </detailInfo>
+
+</report>

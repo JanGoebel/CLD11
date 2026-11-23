@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><?xml-stylesheet type="text/xsl" href="comparison_files/DefaultStyle_SigCmp_web.xsl"?>
+<report>
+
+  <basicInfo genTime="11/23/2026" version="1.0"/>
+
+  <detailInfo>
+    <comparedVIs note1="" note2="" path1="/workspace-base/ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM States.ctl" path2="/workspace/ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM States.ctl">
+      <statistic>
+        <comparedItems>
+          <fpItems cosmItem="T" funcItem="T"/>
+          <bdItems cosmItem="T" funcItem="T"/>
+          <atrItems atrItem="T"/>
+        </comparedItems>
+        <numChanges href="#fpfunc" num="2" type="Front Panel"/>
+        <numChanges href="#fpcosm" num="0" type="Front Panel Position/Size"/>
+        <numChanges href="#bdfunc" num="0" type="Block Diagram Functional"/>
+        <numChanges href="#bdcosm" num="0" type="Block Diagram Cosmetic"/>
+        <numChanges href="#atr" num="0" type="VI Attribute"/>
+      </statistic>
+      <fpChanges cosmAnchor="fpcosm" funcAnchor="fpfunc">
+        <funcChanges detailDesc="changed from &quot;'ATM States': unsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balance Inquiry, None, Terminate Ses&quot; to &quot;'ATM States': unsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balance Inquiry, None, Terminate Ses&quot;" diffType="numeric representation" imagePath1="comparison_files/0_0_42_42_1.png" imagePath2="comparison_files/0_0_42_42_2.png" objLabel="ATM States" objType="Enum"/>
+        <funcChanges detailDesc="changed from &quot;15&quot; to &quot;16&quot;" diffType="number of text items" imagePath1="comparison_files/0_1_42_42_1.png" imagePath2="comparison_files/0_1_42_42_2.png" objLabel="ATM States" objType="Enum"/>
+      </fpChanges>
+      <bdChanges cosmAnchor="bdcosm" funcAnchor="bdfunc"/>
+      <attrChanges atrAnchor="atr"/>
+    </comparedVIs>
+  </detailInfo>
+
+</report>
