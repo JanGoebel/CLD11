@@ -1,0 +1,25 @@
+{
+  "platform": "linux",
+  "files": [
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Deposit Funds.vi",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-SubVIs-Deposit_Funds.vi/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Account.vi",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-SubVIs-Get_Account.vi/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Parse Amount.vi",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-SubVIs-Parse_Amount.vi/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Withdraw Funds.vi",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-SubVIs-Withdraw_Funds.vi/index.html"
+    }
+  ]
+}
