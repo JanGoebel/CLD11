@@ -1,0 +1,15 @@
+{
+  "platform": "linux",
+  "files": [
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Message Type.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_Message_Type.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Build ATM Message.vi",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-SubVIs-Build_ATM_Message.vi/index.html"
+    }
+  ]
+}
