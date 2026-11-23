@@ -299,11 +299,11 @@
       "verification": {},
       "packages": [],
       "failed_packages": [],
-      "nipkg_ready": false,
+      "nipkg_ready": true,
       "vipm_verified": false,
       "nipkg_packages": [],
-      "labview_version": "",
-      "version": "latest"
+      "labview_version": "2026",
+      "version": "linux-4ce478ba9bb6"
     }
   ],
   "linux_lvpm_candidate": null
