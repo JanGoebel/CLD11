@@ -1,0 +1,19 @@
+﻿Changed files (git diff --stat origin/feature/ai-workflow...HEAD):
+ .gitignore                                               |   1 +
+ .../Automatic Teller Machine/ATM Solution.lvproj         |  14 +++++++++++---
+ .../Automatic Teller Machine/Controls/ATM Account.ctl    | Bin 0 -> 4288 bytes
+ .../Automatic Teller Machine/Controls/ATM Data.ctl       | Bin 0 -> 8049 bytes
+ .../Automatic Teller Machine/Controls/ATM Input Mode.ctl | Bin 0 -> 3767 bytes
+ .../Automatic Teller Machine/Controls/ATM Menu Item.ctl  | Bin 0 -> 4594 bytes
+ .../Automatic Teller Machine/Controls/ATM Menu Side.ctl  | Bin 0 -> 5398 bytes
+ .../Automatic Teller Machine/Controls/ATM Menu.ctl       | Bin 0 -> 6397 bytes
+ .../Automatic Teller Machine/Controls/ATM States.ctl     | Bin 0 -> 3963 bytes
+ 9 files changed, 12 insertions(+), 3 deletions(-)
+
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Account.ctl (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Data.ctl (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Input Mode.ctl (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Menu Item.ctl (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Menu Side.ctl (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Menu.ctl (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM States.ctl (added)
