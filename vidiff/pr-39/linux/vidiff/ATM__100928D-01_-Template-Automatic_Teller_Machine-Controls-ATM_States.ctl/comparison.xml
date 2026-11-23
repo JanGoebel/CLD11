@@ -8,13 +8,12 @@
       <statistic>
         <comparedItems>
           <fpItems cosmItem="T" funcItem="T"/>
-          <bdItems cosmItem="T" funcItem="T"/>
+          <bdItems cosmItem="F" funcItem="T"/>
           <atrItems atrItem="T"/>
         </comparedItems>
         <numChanges href="#fpfunc" num="2" type="Front Panel"/>
         <numChanges href="#fpcosm" num="0" type="Front Panel Position/Size"/>
         <numChanges href="#bdfunc" num="0" type="Block Diagram Functional"/>
-        <numChanges href="#bdcosm" num="0" type="Block Diagram Cosmetic"/>
         <numChanges href="#atr" num="0" type="VI Attribute"/>
       </statistic>
       <fpChanges cosmAnchor="fpcosm" funcAnchor="fpfunc">
