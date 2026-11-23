@@ -1,0 +1,40 @@
+{
+  "platform": "linux",
+  "files": [
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Account.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_Account.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Data.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_Data.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Input Mode.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_Input_Mode.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Menu Item.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_Menu_Item.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Menu Side.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_Menu_Side.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Menu.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_Menu.ctl/index.html"
+    },
+    {
+      "file": "ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM States.ctl",
+      "type": "added",
+      "report": "ATM__100928D-01_-Template-Automatic_Teller_Machine-Controls-ATM_States.ctl/index.html"
+    }
+  ]
+}
