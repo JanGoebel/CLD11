@@ -1,0 +1,11 @@
+﻿Changed files (git diff --stat origin/main...HEAD):
+ .github/workflows/pull-request.yml | 61 +++++++++++++++++++++++++++++++++
+ .github/workflows/release.yml      | 33 ++++++++++++++++++
+ .gitignore                         |  4 +++
+ CLAUDE.md                          | 30 +++++++++++++++++
+ tools/Build-Exe.ps1                | 26 ++++++++++++++
+ tools/Diff-VIs.ps1                 | 69 ++++++++++++++++++++++++++++++++++++++
+ tools/Publish-Reports.ps1          | 37 ++++++++++++++++++++
+ tools/Run-Tests.ps1                | 53 +++++++++++++++++++++++++++++
+ 8 files changed, 313 insertions(+)
+
