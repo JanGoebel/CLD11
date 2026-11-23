@@ -61,7 +61,10 @@ jobs:
               windows: '.github/workflows/vidiff-windows-container.yml',
               linux: '.github/workflows/vidiff-linux-container.yml',
             };
-            const platform = platformByWorkflow[workflowRun.name];
+            // workflow_run.name is the run-name ("VIDiff Linux container - <sha>"), not the
+            // workflow title, so identify the source workflow by its path instead.
+            const platform = Object.keys(expectedPathByPlatform)
+              .find((p) => expectedPathByPlatform[p] === workflowRun.path);
             if (!platform) {
               throw new Error(`Untrusted workflow_run.name: ${String(workflowRun.name)}`);
             }
