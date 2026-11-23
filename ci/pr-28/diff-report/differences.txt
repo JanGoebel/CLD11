@@ -1,0 +1,12 @@
+﻿Changed files (git diff --stat origin/feature/15-typedefs...HEAD):
+ .../Automatic Teller Machine/ATM Solution.lvproj        |   9 +++++++--
+ .../Automatic Teller Machine/SubVIs/Find Account.vi     | Bin 0 -> 11600 bytes
+ .../SubVIs/Get Accounts File Path.vi                    | Bin 0 -> 7234 bytes
+ .../Automatic Teller Machine/SubVIs/Read Accounts.vi    | Bin 0 -> 15553 bytes
+ .../SubVIs/Update Account Balance.vi                    | Bin 0 -> 15342 bytes
+ 5 files changed, 7 insertions(+), 2 deletions(-)
+
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Find Account.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Accounts File Path.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Read Accounts.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Update Account Balance.vi (added)
