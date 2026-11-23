@@ -1,8 +1,26 @@
 {
   "schema": 1,
   "repo": "JanGoebel/CLD11",
-  "sha": "68fd1c44d7982ad6df21e96f5d29cb72bbf63c55",
+  "sha": "e85379379ad6d47805eac1ddd7d63660942b93d7",
   "revisions": [
+    {
+      "sha": "e85379379ad6d47805eac1ddd7d63660942b93d7",
+      "short": "e853793",
+      "message": "Merge pull request #42 from JanGoebel/fix/vidiff-cosmetic-crash",
+      "author": "JanGoebelsBot",
+      "date": "2026-11-23T07:42:51Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "71ec604310595075f0e2f762eacbed5780e06816",
+      "short": "71ec604",
+      "message": "VIDiff: retry with -nobdcosm when LabVIEW crashes on a comparison",
+      "author": "JanGoebelsBot",
+      "date": "2026-11-23T07:39:25Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "68fd1c44d7982ad6df21e96f5d29cb72bbf63c55",
       "short": "68fd1c4",
