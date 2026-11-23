@@ -1,6 +1,6 @@
 {
-  "head_sha":  "00af7374c685c3c681d3e6c4e96331780a911bfb",
-  "base_sha":  "7459b08ab483998a160fae51c4834b3b2e2af1c0",
+  "head_sha":  "d88070045e12ce02b60db772b3e653c4abebb049",
+  "base_sha":  "e3536c10fac5fd263b34b309cc3dbfc3ce1e064b",
   "pr_number": "34",
   "platform":  "linux",
   "outcome":   "success"
