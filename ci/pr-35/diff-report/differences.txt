@@ -1,0 +1,20 @@
+﻿Changed files (git diff --stat origin/feature/unit-tests...HEAD):
+ .../Automatic Teller Machine/ATM Solution.lvproj   |  44 ++++++++++++++++++++-
+ .../SubVIs/Get Accounts File Path.vi               | Bin 7234 -> 8358 bytes
+ 2 files changed, 43 insertions(+), 1 deletion(-)
+
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Accounts File Path.vi (modified)
+   - 1. Block Diagram objects
+       Property Node  - added at (96,109)
+       Case Structure  - added at (184,98)
+       SubVI "Application Directory.vi" - added at (200,123)
+       Tunnel  - added at (337,127)
+       wiring changes
+   - 2. Front Panel - Cluster
+       String - dropping allowed
+   - 5. VI Attribute - Documentation (VI Properties)
+       description text : changed from "Returns the absolute path of the ATM accounts file (ATM accounts.txt). The file sits next to the main ATM VI, one folder above the SubVIs folder that holds this VI, so the path is built from this VI's own path - no file dialog is ever shown. error in is passed through unchanged to error out." to "Returns the absolute path of the ATM accounts file (ATM accounts.txt). The base folder depends on where the VI runs, read from the Application property Kind: in a built application (Run Time System) it is the folder of the exe, from NI's Application Directory.vi (vi.lib\Utility\file.llb), where the build specification puts ATM accounts.txt; in the development system (with or without a project) it is two folders above this VI - the folder of the main ATM VI, one above the SubVIs folder that holds this VI. No file dialog is ever shown. error in is passed through unchanged to error out."
+   - 6. VI Attribute - Execution (VI Properties)
+       Automatic Error Handling
+   - 7. VI Attribute - Editor Options (VI Properties)
+       default control style
