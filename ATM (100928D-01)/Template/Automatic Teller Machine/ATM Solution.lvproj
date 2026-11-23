@@ -23,13 +23,17 @@
 			<Item Name="ATM States.ctl" Type="VI" URL="../Controls/ATM States.ctl"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
-			<Item Name="Get Main Menu.vi" Type="VI" URL="../SubVIs/Get Main Menu.vi"/>
-			<Item Name="Get Menu Labels.vi" Type="VI" URL="../SubVIs/Get Menu Labels.vi"/>
-			<Item Name="Get Pressed Button Index.vi" Type="VI" URL="../SubVIs/Get Pressed Button Index.vi"/>
-			<Item Name="Get Menu Action.vi" Type="VI" URL="../SubVIs/Get Menu Action.vi"/>
+			<Item Name="Parse Amount.vi" Type="VI" URL="../SubVIs/Parse Amount.vi"/>
+			<Item Name="Get Account.vi" Type="VI" URL="../SubVIs/Get Account.vi"/>
+			<Item Name="Deposit Funds.vi" Type="VI" URL="../SubVIs/Deposit Funds.vi"/>
+			<Item Name="Withdraw Funds.vi" Type="VI" URL="../SubVIs/Withdraw Funds.vi"/>
 			<Item Name="Build ATM Message.vi" Type="VI" URL="../SubVIs/Build ATM Message.vi"/>
 			<Item Name="Find Account.vi" Type="VI" URL="../SubVIs/Find Account.vi"/>
 			<Item Name="Get Accounts File Path.vi" Type="VI" URL="../SubVIs/Get Accounts File Path.vi"/>
+			<Item Name="Get Main Menu.vi" Type="VI" URL="../SubVIs/Get Main Menu.vi"/>
+			<Item Name="Get Menu Action.vi" Type="VI" URL="../SubVIs/Get Menu Action.vi"/>
+			<Item Name="Get Menu Labels.vi" Type="VI" URL="../SubVIs/Get Menu Labels.vi"/>
+			<Item Name="Get Pressed Button Index.vi" Type="VI" URL="../SubVIs/Get Pressed Button Index.vi"/>
 			<Item Name="Read Accounts.vi" Type="VI" URL="../SubVIs/Read Accounts.vi"/>
 			<Item Name="Update Account Balance.vi" Type="VI" URL="../SubVIs/Update Account Balance.vi"/>
 		</Item>
