@@ -1,0 +1,31 @@
+﻿Changed files (git diff --stat origin/feature/14-main-vi...HEAD):
+ .../Automatic Teller Machine/ATM Solution.lvproj       |  17 +++++++++++++++++
+ .../Template/Automatic Teller Machine/Tests/.gitignore |   3 +++
+ .../Automatic Teller Machine/Tests/Run Tests CLI.vi    | Bin 0 -> 12837 bytes
+ .../Tests/Support/Create Accounts Fixture.vi           | Bin 0 -> 9591 bytes
+ .../Tests/Support/Prepare Report Path.vi               | Bin 0 -> 8435 bytes
+ .../Tests/Test Build ATM Message.vi                    | Bin 0 -> 11802 bytes
+ .../Tests/Test Deposit Funds.vi                        | Bin 0 -> 12306 bytes
+ .../Tests/Test Find Account.vi                         | Bin 0 -> 14609 bytes
+ .../Automatic Teller Machine/Tests/Test Get Account.vi | Bin 0 -> 12012 bytes
+ .../Tests/Test Get Accounts File Path.vi               | Bin 0 -> 9911 bytes
+ .../Tests/Test Get Menu Action.vi                      | Bin 0 -> 15344 bytes
+ .../Tests/Test Get Pressed Button Index.vi             | Bin 0 -> 10781 bytes
+ .../Tests/Test Parse Amount.vi                         | Bin 0 -> 11333 bytes
+ .../Tests/Test Update Account Balance.vi               | Bin 0 -> 12183 bytes
+ .../Tests/Test Withdraw Funds.vi                       | Bin 0 -> 14871 bytes
+ 15 files changed, 20 insertions(+)
+
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Run Tests CLI.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Support/Create Accounts Fixture.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Support/Prepare Report Path.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Build ATM Message.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Deposit Funds.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Find Account.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Get Account.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Get Accounts File Path.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Get Menu Action.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Get Pressed Button Index.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Parse Amount.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Update Account Balance.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Withdraw Funds.vi (added)

@@ -1,0 +1,48 @@
+﻿<html><head><meta charset="utf-8"><title>ATM unit tests</title><style>
+  body { font-family: Segoe UI, sans-serif; margin: 2em }
+  td, th { padding: 4px 12px; text-align: left; border-bottom: 1px solid #ddd }
+  .pass { color: green } .fail { color: white; background: #c00 }
+</style></head><body>
+<h1>ATM unit tests: 40 of 40 passed</h1>
+<table><tr><th>Result</th><th>Test VI</th><th>Assertion</th><th>Failure</th></tr>
+<tr><td class=pass>pass</td><td>Test Parse Amount</td><td>negative amount is rejected - Amount</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Parse Amount</td><td>non-numeric text is rejected - Valid Amount?</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Parse Amount</td><td>amount with surrounding spaces is accepted - Amount</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Parse Amount</td><td>amount with surrounding spaces is accepted - Valid Amount?</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Parse Amount</td><td>non-numeric text is rejected - Amount</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Parse Amount</td><td>negative amount is rejected - Valid Amount?</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Find Account</td><td>unknown account is not found - Index</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Find Account</td><td>existing account returns its record and index - Account</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Find Account</td><td>unknown account is not found - Account</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Find Account</td><td>existing account returns its record and index - Account Found?</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Find Account</td><td>existing account returns its record and index - Index</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Find Account</td><td>account number with surrounding spaces still matches - Index</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Find Account</td><td>account number with surrounding spaces still matches - Account Found?</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Find Account</td><td>unknown account is not found - Account Found?</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Account</td><td>unknown account - no error</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Account</td><td>unknown account - not found</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Account</td><td>existing account - found</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Account</td><td>existing account - record as stored in the file</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Deposit Funds</td><td>deposit adds the amount - returned record</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Deposit Funds</td><td>unknown account returns error 5003</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Deposit Funds</td><td>deposit adds the amount - balance written to the file</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Withdraw Funds</td><td>withdrawing the exact balance - accepted</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Withdraw Funds</td><td>withdrawal within the balance - accepted</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Withdraw Funds</td><td>withdrawing the exact balance - leaves 0 in the file</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Withdraw Funds</td><td>withdrawal above the balance - refused</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Withdraw Funds</td><td>withdrawal within the balance - new balance in the file</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Withdraw Funds</td><td>withdrawal above the balance - file unchanged</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Update Account Balance</td><td>unknown account returns error 5002</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Update Account Balance</td><td>new balance written - only that record changed</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Build ATM Message</td><td>Deposit Complete shows the amount with two decimals</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Build ATM Message</td><td>Main Menu greets the customer by first and last name</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Build ATM Message</td><td>Balance Inquiry shows the balance from the account</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Menu Action</td><td>no button pressed (index -1) returns None</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Menu Action</td><td>middle left button selects Balance Inquiry</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Menu Action</td><td>top right button selects Deposit Prompt</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Pressed Button Index</td><td>two buttons pressed returns the topmost</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Pressed Button Index</td><td>no button pressed returns -1</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Pressed Button Index</td><td>middle button pressed returns 1</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Accounts File Path</td><td>default accounts file - named ATM accounts.txt</td><td></td></tr>
+<tr><td class=pass>pass</td><td>Test Get Accounts File Path</td><td>default accounts file - exists next to the main VI</td><td></td></tr>
+</table></body></html>
