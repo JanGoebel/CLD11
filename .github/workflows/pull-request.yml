@@ -1,0 +1,61 @@
+# Runs on every pull request: unit tests, LabVIEW diff, exe build.
+# Test and diff reports go to GitHub Pages, the exe is a run artifact; a PR comment links all three.
+
+name: Pull request checks
+
+on: pull_request
+
+jobs:
+  check:
+    # Public repo + runner on this PC: never run code from forks.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: [self-hosted, labview]      # this PC: LabVIEW 2026, Caraya, LabVIEW CLI
+    permissions:
+      contents: write                    # push the reports to the gh-pages branch
+      pull-requests: write               # for the comment
+    defaults:
+      run:
+        shell: powershell
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0                 # the diff needs the base branch
+
+      - name: Unit tests (Caraya)
+        id: tests
+        run: .\tools\Run-Tests.ps1
+
+      - name: LabVIEW diff
+        id: diff
+        if: always()
+        run: .\tools\Diff-VIs.ps1 -Base origin/${{ github.base_ref }}
+
+      - name: Build exe
+        id: build
+        run: .\tools\Build-Exe.ps1
+
+      - name: Publish reports to GitHub Pages
+        if: always()
+        run: .\tools\Publish-Reports.ps1 -Folder ci/pr-${{ github.event.number }}
+
+      - name: Upload exe
+        id: exe
+        if: hashFiles('builds/ATM.zip') != ''
+        uses: actions/upload-artifact@v4
+        with: { name: ATM-exe, path: builds/ATM.zip }
+
+      - name: Comment on the PR
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PAGES: https://jangoebel.github.io/CLD11/ci/pr-${{ github.event.number }}
+        run: |
+          gh pr comment ${{ github.event.number }} --body @"
+          ### CI for ${{ github.event.pull_request.head.sha }}
+          | | Result | Report |
+          |---|---|---|
+          | Unit tests | ${{ steps.tests.outcome }} | [test report]($env:PAGES/test-report/index.html) |
+          | LabVIEW diff | ${{ steps.diff.outcome }} | [full diff report]($env:PAGES/diff-report/index.html) |
+          | Exe build | ${{ steps.build.outcome }} | [ATM.zip](${{ steps.exe.outputs.artifact-url }}) (download, needs GitHub sign-in) |
+          "@
