@@ -1,5 +1,5 @@
 # Runs on every pull request: unit tests, LabVIEW diff, exe build.
-# Reports are uploaded as run artifacts and linked in a PR comment.
+# Test and diff reports go to GitHub Pages, the exe is a run artifact; a PR comment links all three.
 
 name: Pull request checks
 
@@ -11,7 +11,7 @@ jobs:
     if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: [self-hosted, labview]      # this PC: LabVIEW 2026, Caraya, LabVIEW CLI
     permissions:
-      contents: read
+      contents: write                    # push the reports to the gh-pages branch
       pull-requests: write               # for the comment
     defaults:
       run:
@@ -35,17 +35,9 @@ jobs:
         id: build
         run: .\tools\Build-Exe.ps1
 
-      - name: Upload test report
-        id: test-report
+      - name: Publish reports to GitHub Pages
         if: always()
-        uses: actions/upload-artifact@v4
-        with: { name: test-report, path: test-report }
-
-      - name: Upload diff report
-        id: diff-report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with: { name: diff-report, path: diff-report }
+        run: .\tools\Publish-Reports.ps1 -Folder ci/pr-${{ github.event.number }}
 
       - name: Upload exe
         id: exe
@@ -57,12 +49,13 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
+          PAGES: https://jangoebel.github.io/CLD11/ci/pr-${{ github.event.number }}
         run: |
           gh pr comment ${{ github.event.number }} --body @"
           ### CI for ${{ github.event.pull_request.head.sha }}
           | | Result | Report |
           |---|---|---|
-          | Unit tests | ${{ steps.tests.outcome }} | [test report](${{ steps.test-report.outputs.artifact-url }}) |
-          | LabVIEW diff | ${{ steps.diff.outcome }} | [full diff report](${{ steps.diff-report.outputs.artifact-url }}) |
-          | Exe build | ${{ steps.build.outcome }} | [ATM.zip](${{ steps.exe.outputs.artifact-url }}) |
+          | Unit tests | ${{ steps.tests.outcome }} | [test report]($env:PAGES/test-report/index.html) |
+          | LabVIEW diff | ${{ steps.diff.outcome }} | [full diff report]($env:PAGES/diff-report/index.html) |
+          | Exe build | ${{ steps.build.outcome }} | [ATM.zip](${{ steps.exe.outputs.artifact-url }}) (download, needs GitHub sign-in) |
           "@
