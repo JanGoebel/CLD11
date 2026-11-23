@@ -1,0 +1,12 @@
+﻿Changed files (git diff --stat origin/feature/20-menu-subvis...HEAD):
+ .../Automatic Teller Machine/ATM Solution.lvproj        |  12 ++++++++----
+ .../Automatic Teller Machine/SubVIs/Deposit Funds.vi    | Bin 0 -> 17025 bytes
+ .../Automatic Teller Machine/SubVIs/Get Account.vi      | Bin 0 -> 12851 bytes
+ .../Automatic Teller Machine/SubVIs/Parse Amount.vi     | Bin 0 -> 9464 bytes
+ .../Automatic Teller Machine/SubVIs/Withdraw Funds.vi   | Bin 0 -> 18034 bytes
+ 5 files changed, 8 insertions(+), 4 deletions(-)
+
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Deposit Funds.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Account.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Parse Amount.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Withdraw Funds.vi (added)
