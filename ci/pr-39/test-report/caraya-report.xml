@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites framework-name="Caraya" framework-version="1.4.4.148">
+<testsuite name="Test Parse Amount" errors="0" skipped="0" tests="6" failures="0" timestamp="2026-11-23T14:19:21.823">
+    <testcase classname="Test Parse Amount" name="negative amount is rejected - Amount"/>
+    <testcase classname="Test Parse Amount" name="amount with surrounding spaces is accepted - Amount"/>
+    <testcase classname="Test Parse Amount" name="non-numeric text is rejected - Valid Amount?"/>
+    <testcase classname="Test Parse Amount" name="amount with surrounding spaces is accepted - Valid Amount?"/>
+    <testcase classname="Test Parse Amount" name="negative amount is rejected - Valid Amount?"/>
+    <testcase classname="Test Parse Amount" name="non-numeric text is rejected - Amount"/>
+</testsuite>
+<testsuite name="Test Find Account" errors="0" skipped="0" tests="8" failures="0" timestamp="2026-11-23T14:19:22.088">
+    <testcase classname="Test Find Account" name="unknown account is not found - Index"/>
+    <testcase classname="Test Find Account" name="existing account returns its record and index - Account Found?"/>
+    <testcase classname="Test Find Account" name="unknown account is not found - Account Found?"/>
+    <testcase classname="Test Find Account" name="account number with surrounding spaces still matches - Index"/>
+    <testcase classname="Test Find Account" name="account number with surrounding spaces still matches - Account Found?"/>
+    <testcase classname="Test Find Account" name="existing account returns its record and index - Account"/>
+    <testcase classname="Test Find Account" name="unknown account is not found - Account"/>
+    <testcase classname="Test Find Account" name="existing account returns its record and index - Index"/>
+</testsuite>
+<testsuite name="Test Get Account" errors="0" skipped="0" tests="4" failures="0" timestamp="2026-11-23T14:19:22.398">
+    <testcase classname="Test Get Account" name="unknown account - not found"/>
+    <testcase classname="Test Get Account" name="unknown account - no error"/>
+    <testcase classname="Test Get Account" name="existing account - record as stored in the file"/>
+    <testcase classname="Test Get Account" name="existing account - found"/>
+</testsuite>
+<testsuite name="Test Deposit Funds" errors="0" skipped="0" tests="3" failures="0" timestamp="2026-11-23T14:19:22.637">
+    <testcase classname="Test Deposit Funds" name="deposit adds the amount - returned record"/>
+    <testcase classname="Test Deposit Funds" name="unknown account returns error 5003"/>
+    <testcase classname="Test Deposit Funds" name="deposit adds the amount - balance written to the file"/>
+</testsuite>
+<testsuite name="Test Withdraw Funds" errors="0" skipped="0" tests="6" failures="0" timestamp="2026-11-23T14:19:22.903">
+    <testcase classname="Test Withdraw Funds" name="withdrawing the exact balance - accepted"/>
+    <testcase classname="Test Withdraw Funds" name="withdrawing the exact balance - leaves 0 in the file"/>
+    <testcase classname="Test Withdraw Funds" name="withdrawal within the balance - accepted"/>
+    <testcase classname="Test Withdraw Funds" name="withdrawal within the balance - new balance in the file"/>
+    <testcase classname="Test Withdraw Funds" name="withdrawal above the balance - refused"/>
+    <testcase classname="Test Withdraw Funds" name="withdrawal above the balance - file unchanged"/>
+</testsuite>
+<testsuite name="Test Update Account Balance" errors="0" skipped="0" tests="2" failures="0" timestamp="2026-11-23T14:19:23.139">
+    <testcase classname="Test Update Account Balance" name="unknown account returns error 5002"/>
+    <testcase classname="Test Update Account Balance" name="new balance written - only that record changed"/>
+</testsuite>
+<testsuite name="Test Build ATM Message" errors="0" skipped="0" tests="3" failures="0" timestamp="2026-11-23T14:19:23.345">
+    <testcase classname="Test Build ATM Message" name="Balance Inquiry shows the balance from the account"/>
+    <testcase classname="Test Build ATM Message" name="Deposit Complete shows the amount with two decimals"/>
+    <testcase classname="Test Build ATM Message" name="Main Menu greets the customer by first and last name"/>
+</testsuite>
+<testsuite name="Test Get Menu Action" errors="0" skipped="0" tests="5" failures="0" timestamp="2026-11-23T14:19:23.745">
+    <testcase classname="Test Get Menu Action" name="bottom right button still selects Fast Cash ($50)"/>
+    <testcase classname="Test Get Menu Action" name="top right button selects Deposit Prompt"/>
+    <testcase classname="Test Get Menu Action" name="middle left button selects Balance Inquiry"/>
+    <testcase classname="Test Get Menu Action" name="top left button selects Fast Cash $100"/>
+    <testcase classname="Test Get Menu Action" name="no button pressed (index -1) returns None"/>
+</testsuite>
+<testsuite name="Test Get Pressed Button Index" errors="0" skipped="0" tests="3" failures="0" timestamp="2026-11-23T14:19:23.964">
+    <testcase classname="Test Get Pressed Button Index" name="two buttons pressed returns the topmost"/>
+    <testcase classname="Test Get Pressed Button Index" name="no button pressed returns -1"/>
+    <testcase classname="Test Get Pressed Button Index" name="middle button pressed returns 1"/>
+</testsuite>
+<testsuite name="Test Get Accounts File Path" errors="0" skipped="0" tests="2" failures="0" timestamp="2026-11-23T14:19:24.121">
+    <testcase classname="Test Get Accounts File Path" name="default accounts file - named ATM accounts.txt"/>
+    <testcase classname="Test Get Accounts File Path" name="default accounts file - exists next to the main VI"/>
+</testsuite>
+<testsuite name="Test Get Main Menu" errors="0" skipped="0" tests="3" failures="0" timestamp="2026-11-23T14:19:24.326">
+    <testcase classname="Test Get Main Menu" name="whole main menu as specified - no None item left"/>
+    <testcase classname="Test Get Main Menu" name="top left item is Fast Cash $100 (label and action)"/>
+    <testcase classname="Test Get Main Menu" name="bottom right item is still Fast Cash $50 (label and action)"/>
+</testsuite>
+<testsuite name="Test Withdraw Funds Fast Cash 100" errors="0" skipped="0" tests="4" failures="0" timestamp="2026-11-23T14:19:24.576">
+    <testcase classname="Test Withdraw Funds Fast Cash 100" name="fast cash $100 on a covered account - accepted"/>
+    <testcase classname="Test Withdraw Funds Fast Cash 100" name="fast cash $100 with only 50 left - refused"/>
+    <testcase classname="Test Withdraw Funds Fast Cash 100" name="fast cash $100 on a covered account - balance in the file is 100 lower"/>
+    <testcase classname="Test Withdraw Funds Fast Cash 100" name="fast cash $100 with only 50 left - file unchanged (still 50)"/>
+</testsuite>
+</testsuites>

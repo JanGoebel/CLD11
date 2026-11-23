@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8"> <title>LabVIEW VI Comparison Report</title> <link href="Get-Main-Menu_files/support/style.css" rel="stylesheet"></head>
+<body>
+<div class="report">
+<h1 class="report-title">LabVIEW VI Comparison Report</h1>
+<p class="generation-time">23/11/2026 2:20:05 pm</p>
+<div class="compared-VIs">
+<details><summary class="difference-heading"><div class="dropdown-left">First VI: C:\Users\PVE\AppData\Local\Temp\vi-diff-1404289653\ATM (100928D-01)\Template\Automatic Teller Machine\SubVIs\Get Main Menu.vi</div><div class="dropdown-right">Second VI: C:\actions-runner-cld11\_work\CLD11\CLD11\ATM (100928D-01)\Template\Automatic Teller Machine\SubVIs\Get Main Menu.vi</div></summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Front Panel Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="Get-Main-Menu_files/fp_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="Get-Main-Menu_files/fp_2.png"/>
+</td></tr><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Block Diagram Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="Get-Main-Menu_files/bd_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="Get-Main-Menu_files/bd_2.png"/>
+</td></tr></table></details>
+</div>
+<div class="included-attributes">
+<ul class="inclusion-list">
+<li class="checked">Front Panel</li>
+<li class="unchecked">Front Panel Position/Size</li>
+<li class="checked">Block Diagram Functional</li>
+<li class="unchecked">Block Diagram Cosmetic</li>
+<li class="checked">VI Attribute</li>
+</ul>
+</div>
+<h2 class="section-header">Detailed Information</h2>
+<details open>
+
+<summary class="difference-heading">1. Block Diagram objects</summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">C:\Users\PVE\AppData\Local\Temp\vi-diff-1404289653\ATM (100928D-01)\Template\Automatic Teller Machine\SubVIs\Get Main Menu.vi</td><td class="difference-divider"></td><td class="compared-vi-image-caption">C:\actions-runner-cld11\_work\CLD11\CLD11\ATM (100928D-01)\Template\Automatic Teller Machine\SubVIs\Get Main Menu.vi</td></tr><tr class="compared-images"><td class="diff-image">
+
+<img class="difference-image" src="Get-Main-Menu_files/0_0_4813_4813_1.png" alt="Get-Main-Menu_files/0_0_4813_4813_1.png">
+</td><td class="difference-divider"></td><td class="diff-image">
+
+<img class="difference-image" src="Get-Main-Menu_files/0_0_4813_4813_2.png" alt="Get-Main-Menu_files/0_0_4813_4813_2.png">
+</td></tr></table>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">Front Panel Terminal "Main Menu" - numeric representation : changed from "<tt>'Main Menu': typedef 'ATM Menu.ctl'\r\ncluster of 2 elements \r\n    'Left': typedef 'ATM Menu Side.ctl'\r\n    cluster of 3 elements \r\n        'Item 1': typedef 'ATM Menu Item.ctl'\r\n        cluster of 2 elements \r\n            'Label': string \r\n            'A</tt>" to "<tt>'Main Menu': typedef 'ATM Menu.ctl'\r\ncluster of 2 elements \r\n    'Left': typedef 'ATM Menu Side.ctl'\r\n    cluster of 3 elements \r\n        'Item 1': typedef 'ATM Menu Item.ctl'\r\n        cluster of 2 elements \r\n            'Label': string \r\n            'A</tt>"</li>
+</ol>
+</details>
+<details class="cosmetic" closed>
+
+<summary class="difference-cosmetic-heading">2. Front Panel - Type Definition</summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">C:\Users\PVE\AppData\Local\Temp\vi-diff-1404289653\ATM (100928D-01)\Template\Automatic Teller Machine\SubVIs\Get Main Menu.vi</td><td class="difference-divider"></td><td class="compared-vi-image-caption">C:\actions-runner-cld11\_work\CLD11\CLD11\ATM (100928D-01)\Template\Automatic Teller Machine\SubVIs\Get Main Menu.vi</td></tr><tr class="compared-images"><td class="diff-image">
+
+<img class="difference-image" src="Get-Main-Menu_files/1_0_550_646_1.png" alt="Get-Main-Menu_files/1_0_550_646_1.png">
+</td><td class="difference-divider"></td><td class="diff-image">
+
+<img class="difference-image" src="Get-Main-Menu_files/1_0_550_646_2.png" alt="Get-Main-Menu_files/1_0_550_646_2.png">
+</td></tr></table>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail-cosmetic">Enum  - number of text items : changed from "<tt>15</tt>" to "<tt>16</tt>"</li>
+</ol>
+</details>
+<details open>
+
+<summary class="difference-heading">3. VI Attribute - Documentation (VI Properties)</summary>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">	description text : changed from "Returns the ATM Main Menu as data: for each of the six function buttons the label shown beside it and the state the main state machine runs when it is pressed. Left side: None, Balance Inquiry, Return Card and Terminate. Right side: Deposit, Withdraw, Fast Cash $50. To change the menu, edit the Main Menu constant; the main state machine needs no change.
+
+Error behaviour: error in is passed to error out unchanged; the menu is returned in every case." to "Returns the ATM Main Menu as data: for each of the six function buttons the label shown beside it and the state the main state machine runs when it is pressed. Left side: Fast Cash $100, Balance Inquiry, Return Card and Terminate. Right side: Deposit, Withdraw, Fast Cash $50. To change a label or to move an item to another button, edit the Main Menu constant; the main state machine needs no change for that. An item with a NEW action also needs a new item in ATM States.ctl and a case for it in the main state machine - an action without a case of its own runs the "None", Default case and does nothing.
+
+Error behaviour: error in is passed to error out unchanged; the menu is returned in every case."</li>
+</ol>
+</details>
+</div>
+</body>
+</html>

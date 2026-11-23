@@ -1,0 +1,173 @@
+﻿Changed files (git diff --stat origin/feature/exe-build-spec...HEAD):
+ .../Automatic Teller Machine/ATM Solution.lvproj    |   2 ++
+ .../Automatic Teller Machine (ATM).vi               | Bin 51222 -> 52726 bytes
+ .../Controls/ATM States.ctl                         | Bin 3963 -> 4003 bytes
+ .../SubVIs/Get Main Menu.vi                         | Bin 12973 -> 13301 bytes
+ .../Automatic Teller Machine/Tests/Run Tests CLI.vi | Bin 12837 -> 13157 bytes
+ .../Tests/Test Get Main Menu.vi                     | Bin 0 -> 13762 bytes
+ .../Tests/Test Get Menu Action.vi                   | Bin 15344 -> 16548 bytes
+ .../Tests/Test Withdraw Funds Fast Cash 100.vi      | Bin 0 -> 14197 bytes
+ 8 files changed, 2 insertions(+)
+
+== ATM (100928D-01)/Template/Automatic Teller Machine/Automatic Teller Machine (ATM).vi (modified)
+   - 1. Block Diagram objects
+       Type Definition "Initial State" - numeric representation : changed from "'Initial State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balance" to "'Initial State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balance"
+   - 2. Block Diagram objects
+       Type Definition "Exit State" - numeric representation : changed from "'Exit State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balance In" to "'Exit State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balance In"
+   - 3. Block Diagram objects
+       Type Definition "Error Exit State" - numeric representation : changed from "'Error Exit State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Bala" to "'Error Exit State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Bala"
+   - 4. Block Diagram objects
+       Case Structure  - data type : changed
+   - 5. Block Diagram objects
+       Type Definition "Init Next State" - numeric representation : changed from "'Init Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balan" to "'Init Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balan"
+   - 6. Block Diagram objects
+       Type Definition "Card Ignored Next State" - numeric representation : changed from "'Card Ignored Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cas" to "'Card Ignored Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cas"
+       Type Definition "Card Event Next State" - numeric representation : changed from "'Card Event Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash," to "'Card Event Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash,"
+   - 7. Block Diagram objects
+       Type Definition "Enter Ignored Next State" - numeric representation : changed from "'Enter Ignored Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Ca" to "'Enter Ignored Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Ca"
+   - 8. Block Diagram objects
+       Type Definition "Enter Next State" - numeric representation : changed from "'Enter Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Bala" to "'Enter Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Bala"
+   - 9. Block Diagram objects
+       Type Definition "Left Release Next State" - numeric representation : changed from "'Left Release Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cas" to "'Left Release Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cas"
+   - 10. Block Diagram objects
+       Type Definition "Right Release Next State" - numeric representation : changed from "'Right Release Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Ca" to "'Right Release Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Ca"
+   - 11. Block Diagram objects
+       Type Definition "Typing Next State" - numeric representation : changed from "'Typing Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Bal" to "'Typing Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Bal"
+   - 12. Block Diagram objects
+       Type Definition "Timeout Next State" - numeric representation : changed from "'Timeout Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Ba" to "'Timeout Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Ba"
+   - 13. Block Diagram objects
+       Type Definition "Timeout Next State" - numeric representation : changed from "'Timeout Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Ba" to "'Timeout Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Ba"
+   - 14. Block Diagram objects
+       Type Definition "Card Inserted Next State" - numeric representation : changed from "'Card Inserted Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Ca" to "'Card Inserted Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Ca"
+   - 15. Block Diagram objects
+       Type Definition "Account Entered Next State" - numeric representation : changed from "'Account Entered Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast " to "'Account Entered Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast "
+   - 16. Block Diagram objects
+       Type Definition "Deposit Entered Next State" - numeric representation : changed from "'Deposit Entered Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast " to "'Deposit Entered Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast "
+   - 17. Block Diagram objects
+       Type Definition "Withdraw Entered Next State" - numeric representation : changed from "'Withdraw Entered Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast" to "'Withdraw Entered Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast"
+   - 18. Block Diagram objects
+       Type Definition "Idle Entered Next State" - numeric representation : changed from "'Idle Entered Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cas" to "'Idle Entered Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cas"
+   - 19. Block Diagram objects
+       Type Definition "Not Verified Next State" - numeric representation : changed from "'Not Verified Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cas" to "'Not Verified Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cas"
+   - 20. Block Diagram objects
+       Type Definition "Verified Next State" - numeric representation : changed from "'Verified Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, B" to "'Verified Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, B"
+   - 21. Block Diagram objects
+       Type Definition "Menu Shown Next State" - numeric representation : changed from "'Menu Shown Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash," to "'Menu Shown Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash,"
+   - 22. Block Diagram objects
+       Type Definition "Deposit Prompt Next State" - numeric representation : changed from "'Deposit Prompt Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast C" to "'Deposit Prompt Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast C"
+   - 23. Block Diagram objects
+       Type Definition "Withdraw Prompt Next State" - numeric representation : changed from "'Withdraw Prompt Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast " to "'Withdraw Prompt Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast "
+   - 24. Block Diagram objects
+       Type Definition "Deposit Next State" - numeric representation : changed from "'Deposit Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Ba" to "'Deposit Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Ba"
+   - 25. Block Diagram objects
+       Type Definition "Withdraw Next State" - numeric representation : changed from "'Withdraw Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, B" to "'Withdraw Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, B"
+   - 26. Block Diagram objects
+       Type Definition "Fast Cash Next State" - numeric representation : changed from "'Fast Cash Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, " to "'Fast Cash Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, "
+   - 27. Block Diagram objects
+       Case Structure  - case added : [ "Fast Cash $100" ]
+       Type Definition "Fast $100 Next State" - added at (1153,604)
+   - 28. Block Diagram objects
+       Unbundle By Name  - added at (438,618)
+       Unbundle By Name  - added at (558,597)
+       Numeric Constant "Fast $100 Amount" - added at (658,632)
+       SubVI "Withdraw Funds.vi" - added at (707,641)
+       Type Definition "Fast $100 Complete Message" - added at (835,580)
+       Type Definition "Fast $100 Failed Message" - added at (856,605)
+       Select  - added at (987,621)
+       Bundle By Name  - added at (1007,569)
+       SubVI "Build ATM Message.vi" - added at (1044,641)
+   - 29. Block Diagram objects
+       Type Definition "Balance Next State" - numeric representation : changed from "'Balance Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Ba" to "'Balance Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Ba"
+   - 30. Block Diagram objects
+       Type Definition "None Next State" - numeric representation : changed from "'None Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balan" to "'None Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balan"
+   - 31. Block Diagram objects
+       Type Definition "Terminate Next State" - numeric representation : changed from "'Terminate Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, " to "'Terminate Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, "
+   - 32. Block Diagram objects
+       Type Definition "Exit Next State" - numeric representation : changed from "'Exit Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balan" to "'Exit Next State': typedef 'ATM States.ctl'\r\nunsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balan"
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM States.ctl (modified)
+   - 1. Front Panel - Enum
+       Enum "ATM States" - numeric representation : changed from "'ATM States': unsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balance Inquiry, None, Terminate Ses" to "'ATM States': unsigned word [16-bit integer (0 to 65535)] enum {Initialize, Wait for Event, Card Inserted, Process Input, Verify Account, Show Main Menu, Deposit Prompt, Withdraw Prompt, Deposit, Withdraw, Fast Cash, Balance Inquiry, None, Terminate Ses"
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Main Menu.vi (modified)
+   - 1. Block Diagram objects
+       Front Panel Terminal "Main Menu" - numeric representation : changed from "'Main Menu': typedef 'ATM Menu.ctl'\r\ncluster of 2 elements \r\n    'Left': typedef 'ATM Menu Side.ctl'\r\n    cluster of 3 elements \r\n        'Item 1': typedef 'ATM Menu Item.ctl'\r\n        cluster of 2 elements \r\n            'Label': string \r\n            'A" to "'Main Menu': typedef 'ATM Menu.ctl'\r\ncluster of 2 elements \r\n    'Left': typedef 'ATM Menu Side.ctl'\r\n    cluster of 3 elements \r\n        'Item 1': typedef 'ATM Menu Item.ctl'\r\n        cluster of 2 elements \r\n            'Label': string \r\n            'A"
+   - 3. VI Attribute - Documentation (VI Properties)
+       description text : changed from "Returns the ATM Main Menu as data: for each of the six function buttons the label shown beside it and the state the main state machine runs when it is pressed. Left side: None, Balance Inquiry, Return Card and Terminate. Right side: Deposit, Withdraw, Fast Cash $50. To change the menu, edit the Main Menu constant; the main state machine needs no change.
+
+Error behaviour: error in is passed to error out unchanged; the menu is returned in every case." to "Returns the ATM Main Menu as data: for each of the six function buttons the label shown beside it and the state the main state machine runs when it is pressed. Left side: Fast Cash $100, Balance Inquiry, Return Card and Terminate. Right side: Deposit, Withdraw, Fast Cash $50. To change a label or to move an item to another button, edit the Main Menu constant; the main state machine needs no change for that. An item with a NEW action also needs a new item in ATM States.ctl and a case for it in the main state machine - an action without a case of its own runs the "None", Default case and does nothing.
+
+Error behaviour: error in is passed to error out unchanged; the menu is returned in every case."
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Run Tests CLI.vi (modified)
+   - 1. Block Diagram objects
+       String Constant "report file name" - data type name : changed from "Failed Verdict" to "report file name"
+       String Constant "report file name" - data value : changed from ""FAILED - a Caraya test failed or no report was written."" to ""caraya-report.xml""
+       String Constant "name or relative path 12" - added at (301,739)
+       String Constant "name or relative path 11" - data type name : changed from "report file name" to "name or relative path 11"
+       String Constant "name or relative path 11" - data value : changed from ""caraya-report.xml"" to ""Test Get Main Menu.vi""
+       Build Path  - added at (517,665)
+       Build Path  - added at (517,724)
+       Build Array  - number of terminals : changed from "11" to "13"
+       String Constant "Failed Verdict" - data type name : changed from "Output Format" to "Failed Verdict"
+       String Constant "Failed Verdict" - data value : changed from ""%s Caraya error code: %d. JUnit report: %s"" to ""FAILED - a Caraya test failed or no report was written.""
+       String Constant "Output Format" - added at (853,636)
+       wiring changes
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Get Main Menu.vi (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Get Menu Action.vi (modified)
+   - 1. Block Diagram objects
+       Cluster Constant "Menu" - deleted at (96,75)
+       Cluster Constant "Menu" - deleted at (96,398)
+       Cluster Constant "Menu" - deleted at (96,721)
+       String Constant "Label 5" - added at (155,832)
+       Type Definition "Menu" - added at (165,411)
+       String Constant "Label 3" - data type name : changed from "Label" to "Label 3"
+       String Constant "Label 3" - data value : changed from ""middle left button selects Balance Inquiry"" to ""no button pressed (index -1) returns None""
+       String Constant "Label 2" - data type name : changed from "Label" to "Label 2"
+       String Constant "Label 2" - data value : changed from ""no button pressed (index -1) returns None"" to ""middle left button selects Balance Inquiry""
+       String Constant "Label 1" - data type name : changed from "Label" to "Label 1"
+       String Constant "Label 4" - added at (209,700)
+       Type Definition "expected 1" - added at (303,70)
+       Type Definition "expected 2" - added at (305,202)
+       Type Definition "expected 4" - added at (309,731)
+       Boolean Constant "Right Side? 3" - added at (347,555)
+       Numeric Constant "Button Index 3" - data type name : changed from "Button Index" to "Button Index 3"
+       Numeric Constant "Button Index 3" - data value : changed from "1" to "-1"
+       Boolean Constant "Right Side? 1" - data type name : changed from "Right Side?" to "Right Side? 1"
+       Numeric Constant "Button Index 1" - data type name : changed from "Button Index" to "Button Index 1"
+       Boolean Constant "Right Side? 2" - data type name : changed from "Right Side?" to "Right Side? 2"
+       Boolean Constant "Right Side? 2" - data value : changed from "True" to "False"
+       Numeric Constant "Button Index 2" - data type name : changed from "Button Index" to "Button Index 2"
+       Numeric Constant "Button Index 2" - data value : changed from "-1" to "1"
+       Boolean Constant "Right Side? 4" - data type name : changed from "Right Side?" to "Right Side? 4"
+       Numeric Constant "Button Index 4" - added at (348,792)
+       Boolean Constant "Right Side? 5" - added at (348,876)
+       Numeric Constant "Button Index 5" - added at (348,893)
+       SubVI - VI linkage
+       SubVI - VI missing
+       SubVI "Get Menu Action.vi" - added at (374,768)
+       Enum Constant "expected 1" - deleted at (438,827)
+       Enum Constant "expected 2" - deleted at (440,919)
+       Enum Constant "expected 3" - deleted at (492,1011)
+       Type Definition "expected 5" - added at (573,567)
+       SubVI "Assert Equal Value_Variant.vi" - added at (587,379)
+       Type Definition "expected 3" - added at (593,437)
+       Merge Errors  - deleted at (616,1072)
+       SubVI "Assert Equal Value_Variant.vi" - added at (690,456)
+       SubVI "Assert Equal Value_Variant.vi" - added at (690,572)
+       Merge Errors  - number of terminals : changed from "3" to "6"
+       wiring changes
+   - 2. VI Attribute - Documentation (VI Properties)
+       description text : changed from "Caraya unit test for Get Menu Action.vi, generated by lvai_generate_test.
+
+One static subVI call per case. Every assertion takes its error in from Define Test rather than from the assertion before it, so a failing case cannot stop a later one - chaining them silently loses cases, measured.
+
+The error cluster carries the FIRST failure only. Read the JUnit report for all of them." to "Caraya unit test for Get Menu Action.vi.
+
+One static subVI call per case. All cases share ONE fixture menu - the application's main menu as Get Main Menu.vi returns it since feature #47 (Fast Cash $100 top left, Fast Cash $50 bottom right). The Menu constant is an instance of the typedef ATM Menu.ctl and every expected constant an instance of ATM States.ctl, so they follow the typedefs when the states enum grows. Do not replace them with unlinked copies: Caraya compares the enum's item list too, and a stale copy fails every case although the numbers are equal.
+
+Case 1: top right button (Right, index 0) selects Deposit Prompt.
+Case 2: middle left button (Left, index 1) selects Balance Inquiry.
+Case 3: no button (index -1) returns None.
+Case 4: top left button (Left, index 0) selects Fast Cash $100.
+Case 5: bottom right button (Right, index 2) still selects Fast Cash, the $50 state.
+
+Every assertion takes its error in from Define Test rather than from the assertion before it, so a failing case cannot stop a later one. The error cluster carries the FIRST failure only. Read the JUnit report for all of them."
+== ATM (100928D-01)/Template/Automatic Teller Machine/Tests/Test Withdraw Funds Fast Cash 100.vi (added)
