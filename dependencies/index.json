@@ -1,8 +1,26 @@
 {
   "schema": 1,
   "repo": "JanGoebel/CLD11",
-  "sha": "c9e2baf68e910b1fd2525c08fd21dd7f0bdb2005",
+  "sha": "68fd1c44d7982ad6df21e96f5d29cb72bbf63c55",
   "revisions": [
+    {
+      "sha": "68fd1c44d7982ad6df21e96f5d29cb72bbf63c55",
+      "short": "68fd1c4",
+      "message": "Merge pull request #41 from JanGoebel/fix/vidiff-deploy-name",
+      "author": "JanGoebelsBot",
+      "date": "2026-11-23T07:34:34Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "a26aa45b6ccfa2c4a999ba3a981ac662c0268aff",
+      "short": "a26aa45",
+      "message": "Dashboard: fix VIDiff deploy rejecting every run (\"Untrusted workflow_run.name\")",
+      "author": "JanGoebelsBot",
+      "date": "2026-11-22T23:30:34Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "c9e2baf68e910b1fd2525c08fd21dd7f0bdb2005",
       "short": "c9e2baf",
