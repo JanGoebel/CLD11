@@ -1,0 +1,8 @@
+﻿Changed files (git diff --stat origin/feature/16-accounts-file...HEAD):
+ .../Automatic Teller Machine/ATM Solution.lvproj        |   4 +++-
+ .../Controls/ATM Message Type.ctl                       | Bin 0 -> 3905 bytes
+ .../SubVIs/Build ATM Message.vi                         | Bin 0 -> 12557 bytes
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+
+== ATM (100928D-01)/Template/Automatic Teller Machine/Controls/ATM Message Type.ctl (added)
+== ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Build ATM Message.vi (added)
