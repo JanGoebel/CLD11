@@ -1,8 +1,9 @@
-LabVIEWCLI started logging in file:  /tmp/lvtemporary_454923.log
+LabVIEWCLI started logging in file:  /tmp/lvtemporary_157988.log
 Using LabVIEW: "/usr/local/natinst/LabVIEW-2026-64/labviewprofull"
 LabVIEW launched successfully.
+Connection established with LabVIEW at port number 3363.
 
-Error code : -350000
-Error message : LabVIEW CLI: (Hex 0xFFFAA8D0) The CLI for LabVIEW failed to establish a connection with LabVIEW. Ensure LabVIEW is running with VI server enabled on the correct port number. To enable VI server in LabVIEW, select "Tools>>Options>>VI Server" and enable the "TCP/IP" checkbox. If the port number under "TCP/IP" is not 3363, you must specify the port number using the "-PortNumber" argument. 
-An error occurred while running the LabVIEW CLI.
+Operation output: 
+Report can be found at /workspace/ci-out/vidiff/ATM__100928D-01_-Template-Automatic_Teller_Machine-SubVIs-Get_Accounts_File_Path.vi/comparison.xml
+CreateComparisonReport operation succeeded.
 

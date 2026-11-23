@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><?xml-stylesheet type="text/xsl" href="comparison_files/DefaultStyle_SigCmp_web.xsl"?>
+<report>
+
+  <basicInfo genTime="11/23/2026" version="1.0"/>
+
+  <detailInfo>
+    <comparedVIs note1="" note2="" path1="/workspace-base/ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Accounts File Path.vi" path2="/workspace/ATM (100928D-01)/Template/Automatic Teller Machine/SubVIs/Get Accounts File Path.vi">
+      <statistic>
+        <comparedItems>
+          <fpItems cosmItem="T" funcItem="T"/>
+          <bdItems cosmItem="F" funcItem="T"/>
+          <atrItems atrItem="T"/>
+        </comparedItems>
+        <numChanges href="#fpfunc" num="95" type="Front Panel"/>
+        <numChanges href="#fpcosm" num="18" type="Front Panel Position/Size"/>
+        <numChanges href="#bdfunc" num="5" type="Block Diagram Functional"/>
+        <numChanges href="#atr" num="3" type="VI Attribute"/>
+      </statistic>
+      <fpChanges cosmAnchor="fpcosm" funcAnchor="fpfunc">
+        <cosmChanges detailDesc="" diffType="panel size" imagePath1="comparison_files/1_0_1.png" imagePath2="comparison_files/1_0_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="skip this control when tabbing" imagePath1="comparison_files/2_0_1.png" imagePath2="comparison_files/2_0_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="autosizing" imagePath1="comparison_files/2_1_1.png" imagePath2="comparison_files/2_1_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(24,132) 180*144&quot; to &quot;(24,147) 108*134&quot;" diffType="moved/resized" imagePath1="comparison_files/2_2_4201_4201_1.png" imagePath2="comparison_files/2_2_4201_4201_2.png" objLabel="error in" objType="Cluster"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/2_3_1.png" imagePath2="comparison_files/2_3_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/2_4_1.png" imagePath2="comparison_files/2_4_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/2_5_1.png" imagePath2="comparison_files/2_5_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/2_6_1.png" imagePath2="comparison_files/2_6_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/2_7_1.png" imagePath2="comparison_files/2_7_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image items" imagePath1="comparison_files/2_8_1.png" imagePath2="comparison_files/2_8_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/2_9_1.png" imagePath2="comparison_files/2_9_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/2_10_1.png" imagePath2="comparison_files/2_10_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image items" imagePath1="comparison_files/2_11_1.png" imagePath2="comparison_files/2_11_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(11,57)&quot; to &quot;(27,164)&quot;" diffType="moved" imagePath1="comparison_files/2_12_4255_20093_1.png" imagePath2="comparison_files/2_12_4255_20093_2.png" objLabel="" objType="Name Label"/>
+        <funcChanges detailDesc="" diffType="dropping allowed" imagePath1="comparison_files/2_13_1.png" imagePath2="comparison_files/2_13_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="changed from &quot;&lt;B>source&lt;/B> describes the origin of the error or warning.&#xA;&#xA;Right-click the &lt;B>error in&lt;/B> control on the front panel and select &lt;B>Explain Error&lt;/B> or &lt;B>Explain Warning&lt;/B> from the shortcut menu for more information about the error.&quot; to &quot;&quot;" diffType="description" imagePath1="comparison_files/2_14_4252_20092_1.png" imagePath2="comparison_files/2_14_4252_20092_2.png" objLabel="source" objType="String"/>
+        <cosmChanges detailDesc="changed from &quot;(11,72) 162*68&quot; to &quot;(27,178) 100*25&quot;" diffType="moved/resized" imagePath1="comparison_files/2_15_4252_20092_1.png" imagePath2="comparison_files/2_15_4252_20092_2.png" objLabel="source" objType="String"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/2_16_1.png" imagePath2="comparison_files/2_16_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/2_17_1.png" imagePath2="comparison_files/2_17_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/2_18_1.png" imagePath2="comparison_files/2_18_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="color" imagePath1="comparison_files/2_19_1.png" imagePath2="comparison_files/2_19_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="color" imagePath1="comparison_files/2_20_1.png" imagePath2="comparison_files/2_20_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="vertical scroll bar show/hide" imagePath1="comparison_files/2_21_1.png" imagePath2="comparison_files/2_21_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="text overflow show/hide" imagePath1="comparison_files/2_22_1.png" imagePath2="comparison_files/2_22_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="color" imagePath1="comparison_files/2_23_1.png" imagePath2="comparison_files/2_23_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/2_24_1.png" imagePath2="comparison_files/2_24_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/2_25_1.png" imagePath2="comparison_files/2_25_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(10,13)&quot; to &quot;(32,77)&quot;" diffType="moved" imagePath1="comparison_files/2_26_4233_20074_1.png" imagePath2="comparison_files/2_26_4233_20074_2.png" objLabel="" objType="Name Label"/>
+        <funcChanges detailDesc="changed from &quot;&lt;B>status&lt;/B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.&#xA;&#xA;Right-click the &lt;B>error in&lt;/B> control on the front panel and select &lt;B>Explain Error&lt;/B> or &lt;B>Explain Warning&lt;/B> from the shortcut menu for more information about the error.&quot; to &quot;&quot;" diffType="description" imagePath1="comparison_files/2_27_4230_20073_1.png" imagePath2="comparison_files/2_27_4230_20073_2.png" objLabel="status" objType="Boolean"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/2_28_1.png" imagePath2="comparison_files/2_28_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/2_29_1.png" imagePath2="comparison_files/2_29_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image items" imagePath1="comparison_files/2_30_1.png" imagePath2="comparison_files/2_30_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(10,28) 23*23&quot; to &quot;(32,91) 50*21&quot;" diffType="moved/resized" imagePath1="comparison_files/2_31_4230_20073_1.png" imagePath2="comparison_files/2_31_4230_20073_2.png" objLabel="status" objType="Boolean"/>
+        <cosmChanges detailDesc="changed from &quot;(68,13)&quot; to &quot;(38,122)&quot;" diffType="moved" imagePath1="comparison_files/2_32_4242_20083_1.png" imagePath2="comparison_files/2_32_4242_20083_2.png" objLabel="" objType="Name Label"/>
+        <funcChanges detailDesc="" diffType="parts added/deleted" imagePath1="comparison_files/2_33_1.png" imagePath2="comparison_files/2_33_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(68,28) 90*21&quot; to &quot;(38,136) 54*22&quot;" diffType="moved/resized" imagePath1="comparison_files/2_34_4240_20082_1.png" imagePath2="comparison_files/2_34_4240_20082_2.png" objLabel="code" objType="Numeric"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/2_35_1.png" imagePath2="comparison_files/2_35_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/2_36_1.png" imagePath2="comparison_files/2_36_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/2_37_1.png" imagePath2="comparison_files/2_37_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="show/hide" imagePath1="comparison_files/2_38_1.png" imagePath2="comparison_files/2_38_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="text justification" imagePath1="comparison_files/2_39_1.png" imagePath2="comparison_files/2_39_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="text overflow show/hide" imagePath1="comparison_files/2_40_1.png" imagePath2="comparison_files/2_40_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="color" imagePath1="comparison_files/2_41_1.png" imagePath2="comparison_files/2_41_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/2_42_1.png" imagePath2="comparison_files/2_42_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/2_43_1.png" imagePath2="comparison_files/2_43_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/2_44_1.png" imagePath2="comparison_files/2_44_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="parts replaced/added/deleted" imagePath1="comparison_files/2_45_1.png" imagePath2="comparison_files/2_45_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(243,34)&quot; to &quot;(168,34)&quot;" diffType="moved" imagePath1="comparison_files/3_0_4324_20104_1.png" imagePath2="comparison_files/3_0_4324_20104_2.png" objLabel="" objType="Name Label"/>
+        <funcChanges detailDesc="changed from &quot;Absolute path of ATM accounts.txt, located in the folder of the main ATM VI (the parent of the SubVIs folder).&quot; to &quot;Absolute path of ATM accounts.txt: in the exe folder when built, in the main ATM VI's folder (two folders above this VI) in the development system.&quot;" diffType="description" imagePath1="comparison_files/3_1_4207_4207_1.png" imagePath2="comparison_files/3_1_4207_4207_2.png" objLabel="Accounts File Path" objType="Path"/>
+        <cosmChanges detailDesc="changed from &quot;(264,48) 112*24&quot; to &quot;(168,48) 100*25&quot;" diffType="moved/resized" imagePath1="comparison_files/3_2_4207_4207_1.png" imagePath2="comparison_files/3_2_4207_4207_2.png" objLabel="Accounts File Path" objType="Path"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/3_3_1.png" imagePath2="comparison_files/3_3_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/3_4_1.png" imagePath2="comparison_files/3_4_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/3_5_1.png" imagePath2="comparison_files/3_5_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="front/back order of parts" imagePath1="comparison_files/3_6_1.png" imagePath2="comparison_files/3_6_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="front/back order of parts" imagePath1="comparison_files/3_7_1.png" imagePath2="comparison_files/3_7_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/3_8_1.png" imagePath2="comparison_files/3_8_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/3_9_1.png" imagePath2="comparison_files/3_9_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/3_10_1.png" imagePath2="comparison_files/3_10_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/3_11_1.png" imagePath2="comparison_files/3_11_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/3_12_1.png" imagePath2="comparison_files/3_12_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image items" imagePath1="comparison_files/3_13_1.png" imagePath2="comparison_files/3_13_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/3_14_1.png" imagePath2="comparison_files/3_14_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/3_15_1.png" imagePath2="comparison_files/3_15_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/3_16_1.png" imagePath2="comparison_files/3_16_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/3_17_1.png" imagePath2="comparison_files/3_17_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image items" imagePath1="comparison_files/3_18_1.png" imagePath2="comparison_files/3_18_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(378,48) 18*24&quot; to &quot;(270,48) 28*17&quot;" diffType="moved/resized" imagePath1="comparison_files/3_19_4328_20109_1.png" imagePath2="comparison_files/3_19_4328_20109_2.png" objLabel="" objType="Browse Button"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_0_1.png" imagePath2="comparison_files/4_0_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_1_1.png" imagePath2="comparison_files/4_1_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image items" imagePath1="comparison_files/4_2_1.png" imagePath2="comparison_files/4_2_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_3_1.png" imagePath2="comparison_files/4_3_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_4_1.png" imagePath2="comparison_files/4_4_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image items" imagePath1="comparison_files/4_5_1.png" imagePath2="comparison_files/4_5_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(10,13)&quot; to &quot;(27,77)&quot;" diffType="moved" imagePath1="comparison_files/4_6_4370_20154_1.png" imagePath2="comparison_files/4_6_4370_20154_2.png" objLabel="" objType="Name Label"/>
+        <funcChanges detailDesc="" diffType="parts replaced/added/deleted" imagePath1="comparison_files/4_7_1.png" imagePath2="comparison_files/4_7_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(68,13)&quot; to &quot;(27,115)&quot;" diffType="moved" imagePath1="comparison_files/4_8_4379_20161_1.png" imagePath2="comparison_files/4_8_4379_20161_2.png" objLabel="" objType="Name Label"/>
+        <funcChanges detailDesc="" diffType="parts added/deleted" imagePath1="comparison_files/4_9_1.png" imagePath2="comparison_files/4_9_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(68,28) 90*21&quot; to &quot;(27,129) 54*22&quot;" diffType="moved/resized" imagePath1="comparison_files/4_10_4377_20160_1.png" imagePath2="comparison_files/4_10_4377_20160_2.png" objLabel="code" objType="Numeric"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_11_1.png" imagePath2="comparison_files/4_11_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_12_1.png" imagePath2="comparison_files/4_12_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/4_13_1.png" imagePath2="comparison_files/4_13_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(11,57)&quot; to &quot;(27,157)&quot;" diffType="moved" imagePath1="comparison_files/4_14_4392_20171_1.png" imagePath2="comparison_files/4_14_4392_20171_2.png" objLabel="" objType="Name Label"/>
+        <funcChanges detailDesc="changed from &quot;&lt;B>source&lt;/B> describes the origin of the error or warning.&#xA;&#xA;Right-click the &lt;B>error in&lt;/B> control on the front panel and select &lt;B>Explain Error&lt;/B> or &lt;B>Explain Warning&lt;/B> from the shortcut menu for more information about the error.&quot; to &quot;&quot;" diffType="description" imagePath1="comparison_files/4_15_4389_20170_1.png" imagePath2="comparison_files/4_15_4389_20170_2.png" objLabel="source" objType="String"/>
+        <cosmChanges detailDesc="changed from &quot;(11,72) 162*68&quot; to &quot;(27,171) 100*25&quot;" diffType="moved/resized" imagePath1="comparison_files/4_16_4389_20170_1.png" imagePath2="comparison_files/4_16_4389_20170_2.png" objLabel="source" objType="String"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_17_1.png" imagePath2="comparison_files/4_17_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_18_1.png" imagePath2="comparison_files/4_18_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/4_19_1.png" imagePath2="comparison_files/4_19_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="changed from &quot;&lt;B>status&lt;/B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.&#xA;&#xA;Right-click the &lt;B>error in&lt;/B> control on the front panel and select &lt;B>Explain Error&lt;/B> or &lt;B>Explain Warning&lt;/B> from the shortcut menu for more information about the error.&quot; to &quot;&quot;" diffType="description" imagePath1="comparison_files/4_20_4367_20153_1.png" imagePath2="comparison_files/4_20_4367_20153_2.png" objLabel="status" objType="Boolean"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_21_1.png" imagePath2="comparison_files/4_21_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_22_1.png" imagePath2="comparison_files/4_22_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image items" imagePath1="comparison_files/4_23_1.png" imagePath2="comparison_files/4_23_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(10,28) 23*23&quot; to &quot;(29,91) 17*17&quot;" diffType="moved/resized" imagePath1="comparison_files/4_24_4367_20153_1.png" imagePath2="comparison_files/4_24_4367_20153_2.png" objLabel="status" objType="Boolean"/>
+        <funcChanges detailDesc="" diffType="show/hide" imagePath1="comparison_files/4_25_1.png" imagePath2="comparison_files/4_25_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="text justification" imagePath1="comparison_files/4_26_1.png" imagePath2="comparison_files/4_26_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="text overflow show/hide" imagePath1="comparison_files/4_27_1.png" imagePath2="comparison_files/4_27_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_28_1.png" imagePath2="comparison_files/4_28_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_29_1.png" imagePath2="comparison_files/4_29_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_30_1.png" imagePath2="comparison_files/4_30_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_31_1.png" imagePath2="comparison_files/4_31_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/4_32_1.png" imagePath2="comparison_files/4_32_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="color" imagePath1="comparison_files/4_33_1.png" imagePath2="comparison_files/4_33_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="vertical scroll bar show/hide" imagePath1="comparison_files/4_34_1.png" imagePath2="comparison_files/4_34_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="text overflow show/hide" imagePath1="comparison_files/4_35_1.png" imagePath2="comparison_files/4_35_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_36_1.png" imagePath2="comparison_files/4_36_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_37_1.png" imagePath2="comparison_files/4_37_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_38_1.png" imagePath2="comparison_files/4_38_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_39_1.png" imagePath2="comparison_files/4_39_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="autosizing" imagePath1="comparison_files/4_40_1.png" imagePath2="comparison_files/4_40_2.png" objLabel="" objType=""/>
+        <cosmChanges detailDesc="changed from &quot;(264,132) 180*144&quot; to &quot;(168,147) 108*127&quot;" diffType="moved/resized" imagePath1="comparison_files/4_41_4208_4208_1.png" imagePath2="comparison_files/4_41_4208_4208_2.png" objLabel="error out" objType="Cluster"/>
+        <funcChanges detailDesc="" diffType="foreground color" imagePath1="comparison_files/4_42_1.png" imagePath2="comparison_files/4_42_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="background color" imagePath1="comparison_files/4_43_1.png" imagePath2="comparison_files/4_43_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="image" imagePath1="comparison_files/4_44_1.png" imagePath2="comparison_files/4_44_2.png" objLabel="" objType=""/>
+        <funcChanges detailDesc="" diffType="color" imagePath1="comparison_files/4_45_1.png" imagePath2="comparison_files/4_45_2.png" objLabel="" objType=""/>
+      </fpChanges>
+      <bdChanges cosmAnchor="bdcosm" funcAnchor="bdfunc">
+        <funcChanges detailDesc="added at (95,109)" diffType="added" imagePath1="comparison_files/0_0_0_4210_1.png" imagePath2="comparison_files/0_0_0_4210_2.png" objLabel="" objType="Property Node"/>
+        <funcChanges detailDesc="added at (184,98)" diffType="added" imagePath1="comparison_files/0_1_0_4220_1.png" imagePath2="comparison_files/0_1_0_4220_2.png" objLabel="" objType="Case Structure"/>
+        <funcChanges detailDesc="added at (200,123)" diffType="added" imagePath1="comparison_files/0_2_0_4227_1.png" imagePath2="comparison_files/0_2_0_4227_2.png" objLabel="Application Directory.vi" objType="SubVI"/>
+        <funcChanges detailDesc="added at (337,127)" diffType="added" imagePath1="comparison_files/0_3_0_20251_1.png" imagePath2="comparison_files/0_3_0_20251_2.png" objLabel="" objType="Tunnel"/>
+        <funcChanges detailDesc="" diffType="wiring changes" imagePath1="comparison_files/0_4_1.png" imagePath2="comparison_files/0_4_2.png" objLabel="" objType=""/>
+      </bdChanges>
+      <attrChanges atrAnchor="atr">
+        <attrChange attrType="Documentation (VI Properties)" detailDesc="changed from &quot;Returns the absolute path of the ATM accounts file (ATM accounts.txt). The file sits next to the main ATM VI, one folder above the SubVIs folder that holds this VI, so the path is built from this VI's own path - no file dialog is ever shown. error in is passed through unchanged to error out.&quot; to &quot;Returns the absolute path of the ATM accounts file (ATM accounts.txt). The base folder depends on where the VI runs, read from the Application property Kind: in a built application (Run Time System) it is the folder of the exe, from NI's Application Directory.vi (vi.lib\Utility\file.llb), where the build specification puts ATM accounts.txt; in the development system (with or without a project) it is two folders above this VI - the folder of the main ATM VI, one above the SubVIs folder that holds this VI. No file dialog is ever shown. error in is passed through unchanged to error out.&quot;" diffType="description text"/>
+        <attrChange attrType="" detailDesc="" diffType="Automatic Error Handling"/>
+        <attrChange attrType="" detailDesc="" diffType="default control style"/>
+      </attrChanges>
+    </comparedVIs>
+  </detailInfo>
+
+</report>

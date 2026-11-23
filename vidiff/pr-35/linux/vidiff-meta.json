@@ -1,7 +1,7 @@
 {
-  "head_sha":  "b4aec3ee7aa868e901ea06fcf9090a3eb04d73d8",
-  "base_sha":  "d88070045e12ce02b60db772b3e653c4abebb049",
+  "head_sha":  "f68ff65e4898d1fbad0be28cb36c36f8cdb48360",
+  "base_sha":  "9f3a062b0579b34eb181d9b3c7e7ad3bcefb9fbf",
   "pr_number": "35",
   "platform":  "linux",
-  "outcome":   "failure"
+  "outcome":   "success"
 }
