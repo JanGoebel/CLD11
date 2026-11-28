@@ -1,0 +1,26 @@
+[
+  {
+    "sha": "52aef5c5e197a1bb738b19c79558ee0d37b9ed3f",
+    "short": "52aef5c",
+    "message": "Merge pull request #43 from JanGoebel/fix/vidiff-always-nobdcosm",
+    "author": "JanGoebelsBot",
+    "date": "2026-11-23T09:57:04+01:00",
+    "vi_count": 1
+  },
+  {
+    "sha": "3a0af592f0e9eb4371db945b9e1a53e4192cd299",
+    "short": "3a0af59",
+    "message": "Add NI LabVIEW CI dashboard: VIDiff, VI Browser and Pages dashboard",
+    "author": "JanGoebelsBot",
+    "date": "2026-11-20T18:14:01+04:00",
+    "vi_count": 1
+  },
+  {
+    "sha": "c5b2efed7fa126213a7f6e2dbf06a7b79764c6db",
+    "short": "c5b2efe",
+    "message": "Add CLD sample exam ATM (100928D-01) with LabVIEW project",
+    "author": "Jan Goebel",
+    "date": "2026-11-07T05:08:31+04:00",
+    "vi_count": 1
+  }
+]
